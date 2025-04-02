@@ -1,5 +1,6 @@
 from turtle import *
 speed(500)
+bgcolor("black")
 color("purple")
 forward(250)
 left(90)
