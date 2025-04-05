@@ -15,3 +15,13 @@ print(num1 + num2)
 print(num1 - num2)
 print(num1 * num2)
 print(num1 / num2)
+#davaleba 3
+
+# BONUS:
+# შექმენით პროგრამა სადაც მომხმარებელს შემოატანინებთ სახელს და ასაკს, შემდეგ შეამოწმეთ ასაკი, თუ ასაკი >= 18 დაუბეჭდეთ რომ მას შეუძლია შევიდეს კლუბში, სხვა შემთხვევაში დაუბეჭდეთ რომ არ შეუძლია.
+name=input("please enter your name: " )
+age=int(input("please enter your age: "))
+if age >= 18:
+    print(name ,"you can enter in the club")
+else:
+    print(name , "you cannt enter club")
