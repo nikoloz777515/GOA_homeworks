@@ -10,6 +10,7 @@
 
 # davaleba 2
 password=input("please enter your password: ")
+
 if password <= "Nikolozi123":
   print(   password , "access granted")
 else:("pow")
@@ -35,3 +36,8 @@ print(num1 + num2)
 print(num1 - num2)
 print(num1 * num2)
 print(num1 / num2)
+#davaleba 4 
+celsius=float(input("please enter temperature in celsius: "))
+farenheit=celsius * (9/5) + 32
+
+print("temperature in farenheit is", farenheit)
