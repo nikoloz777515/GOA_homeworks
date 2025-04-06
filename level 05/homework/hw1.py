@@ -10,16 +10,16 @@
 
 # davaleba 2
 password=input("please enter your password: ")
-
-if password <= "Nikolozi123":
-  print(   password , "access granted")
-else:("pow")
-print( pow, "access denied")
-
-
+mypassword="nikoniko"
+if password ==mypassword:
+    print(   password , "access granted")
+else:
+    print( "access denied")
 
 
 
+
+#davaleba3
 num1 = int(input("please enter first number odd  : "))
 num2 = int(input("please enter second number even  : "))
 print("entered value is: first number  ")
@@ -28,15 +28,15 @@ print("entered value is: second number ")
          
  
 
-
+#davaleba4
 num1 = int (input("please enter first number" ))
 num2 = int (input('please enter second number'))
+num3= int  (input("please enter third number"))
+num4 = int (input("please enter four number"))
+num5=int(input("please enter five number"))
+print((num1+num2+num3+num4+num5)/5)
 
-print(num1 + num2)
-print(num1 - num2)
-print(num1 * num2)
-print(num1 / num2)
-#davaleba 4 
+#davaleba 5
 celsius=float(input("please enter temperature in celsius: "))
 farenheit=celsius * (9/5) + 32
 
