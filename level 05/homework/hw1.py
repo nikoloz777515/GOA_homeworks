@@ -20,11 +20,12 @@ else:
 
 
 #davaleba3
-num1 = int(input("please enter first number odd  : "))
-num2 = int(input("please enter second number even  : "))
-print("entered value is: first number  ")
-print("entered value is: second number ")
 
+num=int(input("enter number"))
+if num % 2 ==0:
+    print("luwia")
+else: 
+    print("kentia")
          
  
 
@@ -41,3 +42,4 @@ celsius=float(input("please enter temperature in celsius: "))
 farenheit=celsius * (9/5) + 32
 
 print("temperature in farenheit is", farenheit)
+ 
