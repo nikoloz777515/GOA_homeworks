@@ -16,11 +16,20 @@ True and False or True or True and False
 #5) მომხმარებელს შემოატანინე მთელი რიცხვი. იმ შემთხვევაში, თუ ეს რიცხვი არის ლუწი და ამავდროულად არის 10-ზე მეტი, დაბეჭდე True. ყველა სხვა შემთხვევაში False. 
 
 #davaleba1
-#and
-#or
+# and 
+print(True and False) #False
+print(False and True) #False
+print(False and False) #False
+print(True and True) #True
+ # or
+print(True or False) #True
+print(False or True) #True
+print(False or False) #False
+print(True or True) #True
 
 #davaleba2
-print(True and False or True or True and False)
+print (True and False or True or True and False)
+
 
 #davaleba 3
 num1=int(input("please enter first number: "))
@@ -29,4 +38,20 @@ num2=int(input("please enter second number: "))
 print(num1 == num2)
 
 #davaleba 4
-num1=input("please rate your self")
+num1=input(("please rate your self: "))
+if num1>=90:
+    print("Grade A")
+elif num1>=70:
+    print("Grade B")
+elif num1>=50:
+    print("Grade C")
+else:
+    print("Grade F")
+
+
+#davaleba 5
+num=int(input("please enter first number: "))
+if num % 2 ==0 and num>10:
+    print("True")
+else:
+    print("False")
