@@ -38,7 +38,7 @@ num2=int(input("please enter second number: "))
 print(num1 == num2)
 
 #davaleba 4
-num1=input(("please rate your self: "))
+num1=int(input("please rate your self: "))
 if num1>=90:
     print("Grade A")
 elif num1>=70:
