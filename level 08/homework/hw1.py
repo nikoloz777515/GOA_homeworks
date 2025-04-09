@@ -23,4 +23,6 @@ if num % 2 == 0 and num> 10:
     print("True")
 else:
     print("False")
-#davaleba4 
+#davaleba4 shesrulebulia
+#davaleba 5
+#davaleba 6
