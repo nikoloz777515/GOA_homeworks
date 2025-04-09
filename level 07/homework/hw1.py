@@ -51,7 +51,7 @@ else:
 
 #davaleba 5
 num=int(input("please enter first number: "))
-if num % 2 ==0 and num>10:
+print(num >= 5 and num <=10)
     print("True")
 else:
     print("False")
