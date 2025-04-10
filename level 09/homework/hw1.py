@@ -10,8 +10,8 @@
 
 #davaleba1
 num=input("please enter your full name: ")
-for  loop in (num):
-  print(num)
+for i in num:
+  print(i)
 
 #davaleba2
 num=int(input("please enter number: "))
