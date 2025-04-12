@@ -9,5 +9,20 @@
 #5) ტერმინალში დაბეჭდეთ რიცხვები 1-დან 20-ის ჩათვლით ორ-ორის გამოტოვებით.
 
 #6) Sololearn-ში გაიარეთ While loops სექცია:
-#1 done
-#2 while loop mushaobs manam sanam mnishvneloba ar daibechdeba da ar morcheba manamde imushavebs while loop magalitad 
+#1 davaleba gadaxedilia
+# davaleba 2 while loop aris cikli romelic gamoiyeneba mxolod mashin tu vicit ricxvis an momxmareblis shemotanili ragacis interacia
+num=int(input("enter number: "))
+while num <=5:
+    print("bad")
+    num=int(input("enter number: "))
+print("good number")
+#davaleba 3 for loop aris is rac  gamoiyeneba mashin roca vicit ricxvis an shemotanili ragacis interacia
+#for while loop aris is rac gamoiyeneba mashin roca ar vicit shemotanili ricxvis an ragacis interacia
+#davaleba 4
+num1=("nika12")
+num2=int(input("please enter password: "))
+while num2 :
+   print("Incorrect password.")
+   num2=int(input("please enter password: "))
+   while num1:
+       print("Correct password you. you have successfully logged in")
