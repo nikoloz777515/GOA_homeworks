@@ -16,13 +16,20 @@
 
 #8) გადახედეთ გაკვეთილის ჩანაწერს.
 # davaleba2
-print(True and False or False or True and False) #False #gamartlda varaudi
+# print(True and False or False or True and False) #False #gamartlda varaudi
 #davaleba 3
-num=int(input("please enter number")) 
-if num % 2 == 0 and num> 10:
-    print("True")
-else:
-    print("False")
+#num=int(input("please enter number: ")) 
+# if num % 2 == 0 and num> 10:
+#     print("True")
+# else:
+#   print("False")
 #davaleba4 shesrulebulia
-#davaleba 5
+#davaleba 5 for loop aris cikli romelic gamoiyeneba mashin roca vicit ricxvis an shemotanili ragacis interacia da for loop gvexmareba imashi rom ramdenjerac gvinda imdenjer gamoitanos is kodshi dawerili ragac rac gvinda
 #davaleba 6
+# for i in range (15):
+#    print(i)
+#davaleba 7
+sum=0
+for i in range (10):
+   sum+=i
+print(sum)
