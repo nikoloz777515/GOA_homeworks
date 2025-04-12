@@ -7,7 +7,7 @@
 # 3 + 2 + 5 / 3
 sum=0
 
-for i in range(10):
-  inputuser=int(input("please enter num"))
-  sum+=inputuser
+for i in range (10):
+    usernum=int(input("please enter num:"))
+    sum+=usernum
 print(sum/10)
