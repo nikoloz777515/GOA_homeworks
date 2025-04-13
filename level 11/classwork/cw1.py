@@ -6,8 +6,7 @@
 # მაგ:
 # 3 + 2 + 5 / 3
 sum=0
-
 for i in range (10):
-    usernum=int(input("please enter num:"))
-    sum+=usernum
-print(sum/10)
+ i=int(input("please enter number: 1,10 "))
+ sum=sum+i
+ print(i/10)
