@@ -9,13 +9,13 @@
 
 # 2) შექმენით Number guess game, while ციკლების გამოყენებით.
 #guess game 
-guess_number=4
-user_input=0
+# guess_number=4
+# user_input=0
 
-while user_input != guess_number:
-    user_input=int(input("please enter a number (1,10): "))
-print("you guess number")
-# 3) გაიხსენეთ გაკვეთილზე გაკეთებული დავალება მომხმარებლის სისტემაში შესვლის მცდელობაზე და დამოუკიდებლად გააკეთეთ იგივე while ციკლის საშუალებით
+# while user_input != guess_number:
+#     user_input=int(input("please enter a number (1,10): "))
+# print("you guess number")
+# 3) გაიხსენეთ გაკვეთილზე გაკეთებული დავალება მომხმარებლის სისტემაში შესვლის მცდელობაზე და დამოუკიდებლად გააკეთეთ იგივე while ციკლისბ საშუალეით
 
 # 4) გადაუარეთ სტრინგს for loop-ით და სტრი გში მხოლოდ ლუწ ინდექსებზე მდგომი ასოები დაბეჭდეთ .
 
