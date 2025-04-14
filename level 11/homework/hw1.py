@@ -22,6 +22,6 @@
 #     user_email = input("please enter email: ")
 # 4) გადაუარეთ სტრინგს for loop-ით და სტრი გში მხოლოდ ლუწ ინდექსებზე მდგომი ასოები დაბეჭდეთ .
 name="nikolozi"
-for i in range(name):
+for i in range (len(name)):
     print(i)
 # 5) გამოიყენეთ range და ლუწ ინდექსებზე მდგომი რიცხვები შეკრიბეთ. ჯამი გამოიტანეთ ტერმინალში.
