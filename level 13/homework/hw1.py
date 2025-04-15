@@ -1,4 +1,9 @@
 # 1) კომენტარის სახით ახსენით, თუ რა დანიშნულება აქვს სიებს (lists) პითონში, დეტალურად განიხილეთ list-ების სინტაქსი და ახსენით თუ როგორ მუშაობს ინდექსინგი.
+# listebis funqcia aris siis shenaxva siashi shegvidzlia chavwerot float integer bollean string ertad da aranairi problema areqneba 
+#indexin mushaobs ricxvebze an stringebze da iwyebas atvla 0 idan iqamde sanam stringi an ricxvebi ar damtavrdeba
+#done
+
+
 
 # 2) შექმენით სია, სადაც შეინახავთ ჯანსაღ საკვებ პროდუქტებს. შემდეგ კი ტერმინალში დაბეჭდეთ ეს სია.
 # helaty=["carrot,cabbage,beans,tomato,onion,cherry,peach,apple"]
