@@ -14,19 +14,24 @@
 
 
 # 5) დაწერეთ პროგრამა, რომელიც 1-დან 10-მდე რიცხვების ჯამს დაითვლის for ციკლით.
-sum=10
-for i in range(1,10):
- sum=sum+i
-print(i+sum)
+# sum=10
+# for i in range(1,10):
+#  sum=sum+i
+# print(i+sum)
 
 # 6) დაწერეთ მეხუთე დავალების მსგასი პროგრამა, თუმცა ამჯერად While loop-ის გამოყენებით.
-
+# sum=10
+# while sum + 11:
+#  print(sum)
 # 7) გამოიყენეთ for ციკლი და დაბეჭდეთ 2-დან 20-ის ჩათვლით ყველა ლუწი რიცხვი.
 
 # 8) While ციკლის საშუალებით დაბეჭდეთ ყველა კენტი რიცხვი 30-დან 70-მდე.
-
+num=30
+while (num+30,70,1):
+ if num % 2 == 1:
+  print(num)
 # 9) კომენტარის სახით ახსენით თუ როგორ მუშაობს Indexing პითონში და განმარტეთ უშუალოდ Index-ის მნიშვნელობა.
-# index aris ricxvis an stringis misamarti index iwyeba ricxvze an strigze 0 idan da grdzeldeba iqamde sanam ar morcheba stringi
+# index aris ricxvis an stringis misamarti index iwyeba ricxvze an strigze 0 idan da grdzeldeba iqamde sanam ar morcheba stringi #done
 
 # 10) რთული:
 # მომხმარებელს შემოატანინეთ რიცხვი და დაწერეთ პროგრამა, რომელიც შეამოწმებს ეს რიცხვი მარტივია თუ არა. (მარტივია რიცხვი, თუ მას მხოლოდ ორი გამყოფი აქვს). მინიშნება: გამოიყენეთ For loop და % გამყოფი ოპერატორი, ასევე აუცილებლად დაგჭირდებათ პროგრამაში Boolean ნიშვნელობების გამოყენება (True და False).
