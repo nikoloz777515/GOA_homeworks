@@ -7,6 +7,6 @@
 # 3 + 2 + 5 / 3
 sum=0
 for i in range (10):
- i=int(input("please enter number: 1,10 "))
- sum=sum+i
- print(i/10)
+    i=int(input("please enter number: 1,10 "))
+    sum=+i
+print(sum/10)
