@@ -28,13 +28,13 @@
 
 # 6) ვისაც წინა საშინაო დავალება არ გაგიკეთებიათ, დაფიქრდით და აუცილებლად გააკეთეთ:
 # მომხმარებელს შემოატანინეთ რიცხვი და დაწერეთ პროგრამა, რომელიც შეამოწმებს ეს რიცხვი მარტივია თუ არა. (მარტივია რიცხვი, თუ მას მხოლოდ ორი გამყოფი აქვს). მინიშნება: გამოიყენეთ For loop და % გამყოფი ოპერატორი, ასევე აუცილებლად დაგჭირდებათ პროგრამაში Boolean ნიშვნელობების გამოყენება (True და False).
-num=0
-user_input=int(input("enter a number: "))
+# num=0
+# user_input=int(input("enter a number: "))
 
-for i in range(user_input):
-    user_input+=num
-if user_input % 2 ==0:
-        print("True")
-else:
-        print("False")
+# for i in range(user_input):
+#     user_input+=num
+# if user_input % 2 ==0:
+#         print("True")
+# else:
+#         print("False")
 # 7) გაიარეთ Sololearn - More on conditional statements-ებიდან lists ჩათვლით
