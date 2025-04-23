@@ -1,4 +1,4 @@
-გააკეთეთ Codewars-ები:
+# გააკეთეთ Codewars-ები:
 
 # 1) https://www.codewars.com/kata/565f5825379664a26b00007c/train/python
 
