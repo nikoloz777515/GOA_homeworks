@@ -24,14 +24,14 @@
 
 
 # 4) შექმენით ფუნქცია, რომელსაც არგუმენტად გადასცემთ სიას (ჩათვალეთ, რომ სიაში ინახება Integer-ი რიცხვები). ამ ფუნქციამ საბოლოოდ უნდა დააბრუნოს სიიდან მხოლოდ ლუწი რიცხვები.
-def list (num):
-    return num
+# def list (num):
+#     return num
 
-print(list(12))
-print(list(6))
-print(list(2))
-print(list(7))
-print(list(3))
+# print(list(12))
+# print(list(6))
+# print(list(2))
+# print(list(7))
+# print(list(3))
 
 
 
@@ -59,20 +59,75 @@ print(list(3))
 # 10) შექმენით ფუნქცია. მას გადაეცით ორი პარამეტრი: x და y რიცხვები. ფუნქციამ უნდა დააბრუნოს x რიცხვი აყვანილი y ხარისხში. 
 # def num (x,y):
 #     return x**y
+
+
+# print(num(5,7))
+
+
 # შეასრულეთ Codewars-ები წინა დავალებებიდან + რამდენიმე ახალი ამოცანა:
 
 # 11) https://www.codewars.com/kata/565f5825379664a26b00007c/train/python
+# def get_size(w,h,d):
+#     v=w*h*d
+#     surfacearea= 2 * (w*h+w*d+h*d)
+#     return [surfacearea,v]
+
+
+
+
+
 
 # 12) https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/train/python
+# def repeat_str(repeat, string):
+#     return repeat * string
+
+
 
 # 13) https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/python
+# def maps(a):
+#     rezoultlist=[]
+#     for i in a:
+#         rezoultlist.append(i*2)
+#     return rezoultlist 
+
+
 
 # 14) https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/python
+# def plural(n):
+#     return n != 1
+
+
 
 # 15) https://www.codewars.com/kata/511f0fe64ae8683297000001/train/python
+# websites.append("codewars")
+
+
+
+
 
 # 16) https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/python
+# def find_average(numbers):
+#     if numbers == []:
+#         return 0
+    
+#     return sum (numbers) / len (numbers)
+
+
+
 
 # 17) https://www.codewars.com/kata/53369039d7ab3ac506000467/train/python
+# def bool_to_word(boolean):
+#     if boolean == True:
+#         return "Yes"
+#     else:
+#         return "No"
+
+
 
 # 18) https://www.codewars.com/kata/59441520102eaa25260000bf/train/python
+
+# def unusual_five():
+#     name="gijkj"
+#     return len (name)
+
+
