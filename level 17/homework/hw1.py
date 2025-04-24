@@ -59,3 +59,20 @@ print(list(3))
 # 10) შექმენით ფუნქცია. მას გადაეცით ორი პარამეტრი: x და y რიცხვები. ფუნქციამ უნდა დააბრუნოს x რიცხვი აყვანილი y ხარისხში. 
 # def num (x,y):
 #     return x**y
+# შეასრულეთ Codewars-ები წინა დავალებებიდან + რამდენიმე ახალი ამოცანა:
+
+# 11) https://www.codewars.com/kata/565f5825379664a26b00007c/train/python
+
+# 12) https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/train/python
+
+# 13) https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/python
+
+# 14) https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/python
+
+# 15) https://www.codewars.com/kata/511f0fe64ae8683297000001/train/python
+
+# 16) https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/python
+
+# 17) https://www.codewars.com/kata/53369039d7ab3ac506000467/train/python
+
+# 18) https://www.codewars.com/kata/59441520102eaa25260000bf/train/python
