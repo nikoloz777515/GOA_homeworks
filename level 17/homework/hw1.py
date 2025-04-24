@@ -19,12 +19,6 @@
 
 
 
-# double_values(11)
-# double_values(1)
-# double_values(17)
-# double_values(13)
-# double_values(21)
-# double_values(2)
 
 
 
