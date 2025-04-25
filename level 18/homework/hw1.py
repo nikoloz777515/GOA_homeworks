@@ -9,14 +9,66 @@
 
 
 # 2) დაწერეთ ამ ფუნქციების ორ-ორი მაგალითი და ახსენით თუ როგორ მუშაობს თითოეული.
+# helaty = ["banana","cocunut","mango","grape"]
+# helaty.remove("mango")
+# print(helaty)
+# remove shlis im strings siidan romelas mivutitebd da gamovidzaxebt  da gamodzaxebisas unda chavwerot mxolod im stringis saxeli romelic gvinda rom amoishalos tu saxels arc chavwert da magalitad chavwert stringis index arimushavebs Done
+
+
+
+# food=["khinkali","pizza","fries","mwvadi"]
+# food.append("ostri")
+# print(food)
+# append amatebs im ragaca strings an ricxvs rac gvinda rom siashi daematos magram rasac davamatebt daemateba mxolod siis boloshi ramxelac arunda ikos sia chajdeba mainc siis boloshi Done
+
+
+
 
 # 3) ეცადეთ, რომ გააკეთოთ ამ ფუნქციების Copy ფუნქციები თქვენი ხელით.
+# fruits=["cherry","stroberyy","peach","grape"]
+# fruits.remove("cherry")
+# print(fruits) Done
+
+
+
+# saxelebi=["nika","gio","zuka","luka"]
+# saxelebi.clear()
+# print(saxelebi) Done
+
+# foods=["vegetables","fruits"]
+# foods.pop(1)
+# print(foods) Done
+
+
+
 
 # 4) შექმენით სია სადაც შეინახავთ 5 რიცხვს, მომხმარებელს აარჩევინეთ ამ სიიდან ერთ-ერთი რიცხვი და დათვალეთ თუ რამდენჯერ მეორდება ეს რიცხვი სიაში.
+# sia=[1,2,3,4,5]
+# user_input=input("enter a number 1,2,3,4,5:" )
+# count=sia.count(user_input)
+# print(sia,user_input) Done
 
 # 5) შექმენით სია, სადაც დაამატებთ მინიმუმ 5 ელემენტს. მომხმარებელს ჰკითხე სურს თუ არა სიის გასუფთავება. თუ დაგთანხმდება გაასუფთავე სია თუ არა მაშინ ჩვეულებრივად დაბეჭდე ეს სია ტერმინალში.
+# list=["black","blue","red","white","brwon"]
+# user_input=input("do you want clear list? yes or no?:")
+# if user_input == "yes":
+#     list.clear()
+# else:
+#     print(["black","blue","red","white","brwon"]) Done
+
+
+
 
 # 6) შექმენით სია სახელად Fruits და ჩაამატეთ მასში ხილი. მომხმარებელს შემოატანინეთ ინდექსი და შემდეგ  ამ ინდექსზე მდგომი ელემენტი ამოშალე სიიდან. საბოლოოდ დაბეჭდე სიის საბოლოო ვერსია.
+# Fruits=["peach","banana","mango","grape","stroberry","cherry"]
+# user_input=input("please enter index 0-5:")
+# if user_input == input:
+#     print(Fruits.pop(user_input))
+# else:
+#     print(Fruits)
+
+
+
 
 # გააკეთეთ Codewars-ები: 
 
