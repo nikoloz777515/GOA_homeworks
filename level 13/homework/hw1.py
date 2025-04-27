@@ -6,8 +6,8 @@
 
 
 # 2) შექმენით სია, სადაც შეინახავთ ჯანსაღ საკვებ პროდუქტებს. შემდეგ კი ტერმინალში დაბეჭდეთ ეს სია.
-# helaty= "carrot,cabbage,beans,tomato,onion,cherry,peach,apple"
-# print (helaty) done
+helaty = ["carrot","cabbage","beans","tomato","onion","cherry","peach","apple"]
+print (helaty)
 
 # 3) შექმენით სია, სადაც შეინახავთ თქვენი საყვარელი მანქანის მოდელებს. დაბეჭდეთ ამ სიის მესამე ელემენტი.
 # fav_carbrands=["mercedes","audi","bmw","ferarri"]
