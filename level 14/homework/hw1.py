@@ -17,20 +17,29 @@
 
 
 # 4) ცვლადში შეინახეთ ცარიელი სია. input-ის მეშვეობით მომხმარებელს შემოატანინეთ ინფორმაცია საკუთარი თავის შესახებ. (მაგ. სახელი, გვარი, ასაკი, დაბადების თარიღი, სიმაღლე და ა.შ.)მომხმარებელმა მინიმუმ უნდა შემოიტანოს 8 input. ეს ყოველივე input დაამატეთ თქვენს მიერ შექმნილ ცარიელ სიაში.
-about_user=[]
 
-name=input("please enter your name: ")
-name.append(name)
-lastname =input("please enter your last name: ")
-age=int(input("please enter your age: "))
-height=int(input("please enter your height: "))
-email=input("please enter your email adress: ")
-nationality=input("please enter your nationality: ")
-phone_number=int(input("please enter your phone number:  "))
-adress=input("please enter your street adress: ")
+# about_user=[]
+
+# name=input("please enter your name: ")
+# lastname =input("please enter your last name: ")
+# age=int(input("please enter your age: "))
+# height=int(input("please enter your height: "))
+# email=input("please enter your email adress: ")
+# nationality=input("please enter your nationality: ")
+# phone_number=int(input("please enter your phone number:  "))
+# adress=input("please enter your street adress: ")
+
+# about_user.append(name)
+# about_user.append(lastname)
+# about_user.append(age)
+# about_user.append(height)
+# about_user.append(email)
+# about_user.append(nationality)
+# about_user.append(phone_number)
+# about_user.append(adress) 
 
 
-print(about_user)
+# print(about_user) Done
 
 # 5) დაასრულეთ საკლასო დავალებები. (ეცადეთ თქვენით გააკეთოთ სანამ ჩანაწერს გადახედავთ ):
 
