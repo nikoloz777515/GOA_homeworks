@@ -17,22 +17,35 @@
 
 
 # 4) ცვლადში შეინახეთ ცარიელი სია. input-ის მეშვეობით მომხმარებელს შემოატანინეთ ინფორმაცია საკუთარი თავის შესახებ. (მაგ. სახელი, გვარი, ასაკი, დაბადების თარიღი, სიმაღლე და ა.შ.)მომხმარებელმა მინიმუმ უნდა შემოიტანოს 8 input. ეს ყოველივე input დაამატეთ თქვენს მიერ შექმნილ ცარიელ სიაში.
-# list=[]
+about_user=[]
+
+name=input("please enter your name: ")
+name.append(name)
+lastname =input("please enter your last name: ")
+age=int(input("please enter your age: "))
+height=int(input("please enter your height: "))
+email=input("please enter your email adress: ")
+nationality=input("please enter your nationality: ")
+phone_number=int(input("please enter your phone number:  "))
+adress=input("please enter your street adress: ")
+
+
+print(about_user)
 
 # 5) დაასრულეთ საკლასო დავალებები. (ეცადეთ თქვენით გააკეთოთ სანამ ჩანაწერს გადახედავთ ):
 
 #  • მომხმარებელს შემოატანინეთ 10 მნიშვნელობა სიაში (For loop-ის მეშვეობით. ) შემდეგ გამოიყენეთ კიდევ ერთი for loop, გადაუარეთ თითოეულ სიის ელემენტს და შამოწმეთ ეს რიცხვები ლუწია თუ კენტი.
 
 # • მომხმარებელს შემოატანინეთ 5 სახეთი, შემდეგ კი კიდევ ერთი for loop გამოიყენეთ რათა გაიგოთ ამ სახელებში სიმბოლოების რაოდენობა აღემატება თუ არა 5-ს. თუ აღემატება დაუბეჭდეთ "the name consists of more than five letters).
-numbers=[0]
-for i in range (5):
-    numbers=int(input("please enter number"))
-i+=numbers
-for numbers in range(6):
-    if numbers % 2==0:
-         print("even")
-else:
-    print("odd")
+# numbers=[0]
+# for i in range (5):
+#     numbers=int(input("please enter number"))
+# i+=numbers
+# for numbers in range(6):
+#     if numbers % 2==0:
+#          print("even")
+# else:
+#     print("odd")
 #  • შექმენით სია, რომელშიც დაამატებთ ჯანსაღ საკვებ პროდუქტებს. (იყოს მინიმუმ 5 პროდუქტი). ამოშალეთ სიის პირველი და ბოლო ელემენტები და ტერმინალში დაბეჭდეთ სიის განახლებული ვერსია. 
 # helaty=["peach","cucumber","tomato","carrot","alucha"]
 # helaty.pop(0)
