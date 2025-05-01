@@ -22,7 +22,14 @@
 
 
 # 4) https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/python
+# def plural(n):
+#     if n == 1:
+#         return False
+#     else: return True
+
 
 # 5) https://www.codewars.com/kata/511f0fe64ae8683297000001/train/python
+# websites.append("codewars")
+
 
 # 6) https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/python
