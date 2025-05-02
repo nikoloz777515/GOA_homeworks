@@ -13,14 +13,15 @@
 # 3) https://www.codewars.com/kata/5810085c533d69f4980001cf
 
 # def calculator(x, y, op):
+
 #     if operation == "+":
-#         return str(num1 + num2)
+#         return str(x + y)
 #     elif operation == "-":
-#         return str(num1 - num2)
+#         return str(x - y)
 #     elif operation == "*":
-#         return str(num1 * num2)
+#         return str(x * y)
 #     elif operation == "/":
 #             return "unknown value"  
-#             return str(num1 / num2)
+#             return str(x / y)
 #     else:
 #         return "unknown value"
