@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Honk&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+p{
+    font-size: xx-large;
+}
+p{
+    color: red;
+    font-family: Honk;
+
+}
+
+h1{
+    color: blue;
+
+}
+
+body{background-color: black;
+}
