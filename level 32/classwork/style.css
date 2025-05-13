@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+
+
+
+h1{
+    font-size:50;
+}
+
+h1{
+    color: red;
+}
+
+
+
+p{
+    font-size: 32;
+}
+
+
+p{
+    color:white;
+}
+
+#str{
+    color: darkorchid;
+}
+
+#str{
+    font-size: 44;
+}
+
+#str{
+    text-align: center;  
+}
+
+
+#bt{
+    text-align: center;
+}
