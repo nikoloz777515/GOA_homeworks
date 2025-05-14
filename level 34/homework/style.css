@@ -1,8 +1,28 @@
-#unq{
-    width: 300px;
-    height: 200px;
-    border: 2px solid black;
-    margin: 15px;
-    padding: 20px;
-    background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* davlinke font-family anu teqsti rogor stilshi unda iyos */
+#HL{font-family: Lobster;
+
+    /* mivaniche id shi mocemul teqsts zoma  */
+    font-size: xx-large;
+
+    /* mivaniche id shi mocemul teqsts feri */
+    color: brown;
+
+    /* shevuqmeni  id shi mocemul teqsts chrdili shadow-text it */
+     text-shadow: 20px 15px 15px  black;
 }
+
+
+.TD{
+    /* TD is class shi mocemuli  teqsti gadavitene centrshi */
+    text-align: center ;
+
+    /* fontis anu  class shi mocemuli teqstis zoma gavzarde da mivaniche XX-large zoma */
+    font-size:xx-large;
+
+    /* mivaniche class shi mocemul teqsts feri */
+    color: green;
+
+    /* shevuqmeni  class shi mocemul teqsts chrdili shadow-text it */
+    text-shadow: 20px 15px 15px  black;
+}  
