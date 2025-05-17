@@ -1,0 +1,36 @@
+/* *{
+    margin: 0;
+} */
+
+/* .cls{
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 200px;
+
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px rgb(197, 197, 197);
+    border-radius: 8px;
+
+    background-image: url(dsc04690.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-section{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.2); 
+
+} */
+
+
+ol{
+    text-align: center;
+    list-style-type:decimal-leading-zero;
+    list-style-position: inside;
+    
+}
+
