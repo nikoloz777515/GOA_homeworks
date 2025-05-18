@@ -1,0 +1,15 @@
+.hw{
+    
+  display: flex;
+  justify-content: space-between;
+}
+
+.bw{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bh{
+    display: flex;
+    justify-content:space-evenly ;
+}
