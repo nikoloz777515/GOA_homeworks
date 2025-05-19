@@ -1,0 +1,22 @@
+.rw {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.rwr {
+    justify-content:start;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.cl{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.clmr{
+  display: flex;
+  flex-direction: column-reverse;
+}
