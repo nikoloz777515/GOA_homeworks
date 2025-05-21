@@ -1,0 +1,15 @@
+body{
+    background-color: wheat;
+}
+
+.wl{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.div{
+    color: blue;
+    font-size: medium;
+}
+

@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    box-sizing: border-box;
+    box-sizing: 50;
+    border: solid black;
+    border-radius: 100px;
+}

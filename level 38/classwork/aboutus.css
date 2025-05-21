@@ -1,0 +1,26 @@
+body{
+    background-color: green;
+}
+
+
+.wl{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+
+.h1{
+    font-size: small;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+.bt{
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+
+    
+}
