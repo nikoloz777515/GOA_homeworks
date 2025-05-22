@@ -1,0 +1,40 @@
+
+a {
+  color: red;
+  
+}
+
+
+#nk{
+    
+    font-size: xx-large;
+    display: inline-block;
+    
+    
+}
+
+#pg{
+    width:1400px;
+    height: 800px;
+    background-image: url(facadenight.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    
+    
+
+}
+
+
+#dv{
+    background-color: wheat;
+    
+}
+
+#ck :hover{
+    color: blue;
+    
+}
+
