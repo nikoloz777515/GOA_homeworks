@@ -30,11 +30,78 @@ a {
 
 #dv{
     background-color: wheat;
+    display: flex;
+    flex-direction: row;
     
 }
 
 #ck :hover{
-    color: blue;
+    background-color: black;
+    color:white;
+}
+
+
+#img2 img{
+    width:500px;
+    background-color: wheat;
+}
+
+#img3 img{
+    width: 500px;
+}
+
+#imgs{
+    background-color: wheat;
+     flex-direction: column;
+    gap: 50px;
+
+}
+
+#abtu{
+    text-align: center;
+}
+
+#img4 img{
+    width: 1200px;
+    height: 800px;
+}
+
+#bt2 :hover{
+    color: white;
+    background-color: black;
+    display: flex;
+    gap: 15px;
+}
+
+
+#bt3 :hover{
+    color: white;
+    background-color: black;
+}
+
+
+#bt4 :hover{
+    color: white;
+    background-color: black;
+}
+
+#bt5 :hover{
+    color: white;
+    background-color: black;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#h11{
     
 }
+
+
+
+
+
 
