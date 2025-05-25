@@ -1,0 +1,17 @@
+#hl{
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+
+
+#lr{
+    font-weight: normal;
+    background-color: wheat;
+
+}
+
+#bt :hover{
+color: white;
+background-color: blue;
+}

@@ -6,4 +6,14 @@
 
 # 2) https://www.codewars.com/kata/55908aad6620c066bc00002a/train/python
 
+
+
+
+
 # 3) https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/train/python
+
+# def find_short(s):
+#     word_count = 0
+# for word in s.split(find_s):
+#     word_count += 1
+# print("Word Count:", word_count)

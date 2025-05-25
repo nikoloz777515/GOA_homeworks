@@ -1,0 +1,56 @@
+body{
+    background-color: blueviolet;
+}
+
+#frm1{
+    background-color: aqua;
+    text-align: center;
+    border: 6px solid black;
+    width: 500px;
+    border-radius: 7px;
+    padding-block-start: 20px;
+    padding-bottom: 30px;
+    
+}
+
+
+#txt{
+    border-radius: 6px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+   
+}
+
+#txt2{
+    border-radius: 6px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+ #dt{
+    border-radius: 6px;  
+}
+
+ #pass{
+    border-radius: 6px;
+} 
+
+
+#bt :hover{
+    color: white;
+    background-color: black;
+
+}
+
+
+#main{
+    display: flex;
+    justify-content: center;
+    justify-items: end;
+    margin: auto;
+    padding: 150px;
+    
+    
+}
