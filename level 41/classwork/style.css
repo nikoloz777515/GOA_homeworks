@@ -1,0 +1,18 @@
+#sct1{
+    /* display-flex ვიყენებთ იმისთის რომ ვმართოთ ელემენტი*/
+    display: flex;
+    /* justify-content ალაგებს თ როგორ გადლაგდნენ ელემენტები */
+    justify-content: center;
+}
+
+#sct2{
+    /* display-flex ვიყენებთ იმისთის რომ ვმართოთ ელემენტი*/
+    display: flex;
+    /* flex-direction აქვს 4 მნიშვნელობა და მაგით ვალაგებთ ელემენტებს */
+    flex-direction: column;
+}
+
+#sct3{
+    /* text-align არის ტექსტის განლაგება მაგ: თუ გავუწერთ text-align center ჩენს ელემენტებს გამოიტანს ცენტრში */
+    text-align: end;
+}

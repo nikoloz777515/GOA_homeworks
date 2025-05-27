@@ -1,0 +1,35 @@
+body{
+    background-color: wheat;
+}
+#card1{
+    background-color: lightblue;
+    border: 6px solid black;
+    border-radius: 8px;
+    width: 230px;
+    height: 120;
+}
+#img1 img{
+    
+    width: 230px;
+}
+#el{
+    text-align: center;
+}
+
+#btn1{
+    
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+p{
+    color: black;
+}
+#crd{
+  
+    display: flex;
+    justify-content: center;
+    padding: 190px;
+    
+}
+
