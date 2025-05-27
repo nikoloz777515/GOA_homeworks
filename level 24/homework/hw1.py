@@ -39,6 +39,11 @@
 #             list.append(i)
 #     return list
 # https://www.codewars.com/kata/5d5ee4c35162d9001af7d699/train/python
+# def sum_of_minimums(numbers):
+#     sum=0
+#     for i in numbers:
+#         sum+=min(i)
+#     return sum
 
 # რა არის რიცხვის ფაქტორიალი
 # https://en.wikipedia.org/wiki/Factorial
