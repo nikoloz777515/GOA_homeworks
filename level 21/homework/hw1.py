@@ -56,4 +56,17 @@
 
 # 7kyu:
 # 1) https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/python
+# def solution(text, ending):
+#     if text.endswith(ending):
+#         return True
+#     else:
+#         return False
+    
+
 # 2) https://www.codewars.com/kata/58712dfa5c538b6fc7000569/train/python
+
+# def count_red_beads(n):
+#     if n < 2:
+#         return 0
+#     else:
+#         return n * 2-2
