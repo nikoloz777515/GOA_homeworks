@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+/* აქ გადმოვწერე font ანუ ტქსტის  სტილი ანუ როგორ იქნება ტექსტის სტილი */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
-body{
+/* აქ გავსტილე body დაის ფერი დავადე  და ახლა  საიტის  ფერი გახდება კანისფერი  */
+body {
     background-color: navajowhite;
 }
 
 
-
+/* აქ კი გავსტილე table1 id ით გავუკეტე ტექსტის ზომა ტექსტი გადავიტანე შუაშ გალამაზებისთის და ა.შ */
 #table1 {
-    
+
     font-family: Roboto;
     display: flex;
     justify-content: center;
@@ -17,17 +18,38 @@ body{
     margin: 150px;
 }
 
-
-tr :hover{
+/* აქ კი table row გავსტილე გავუკეთ hover ანუ როცა მომხმარებელი შეეხება იმას რაც table row შია შეეცვლება უკანა მხრის ფერი და  გაუხდება ის ფერი რომელიც მე მივანიჭე */
+tr:hover {
     background-color: red;
 }
 
-tr:nth-child(1){
-    background-color:white;
+/* აქ კი table headig გავსტილე გავუკეთ hover ანუ როცა მომხმარებელი შეეხება იმას რაც table row შია შეეცვლება უკანა მხრის ფერი და  გაუხდება ის ფერი რომელიც მე მივანიჭე */
+th:hover {
+    background-color: aquamarine;
 }
-td:nth-child(even){
+
+
+/* აქ კი tr ზე გამოვიყენე nrth-child() ამ nrth-child()ით შემოძლია გამოვიძახო ელემენტები და ასე მივანიჭო ფერი ზომა და ა.შ  */
+tr:nth-child(1) {
+    background-color: white;
+}
+
+/* აქ კი td ზე გამოვიყენე nrth-child() ამ nrth-child()ით შემოძლია გამოვიძახო ელემენტები და ასე მივანიჭო ფერი ზომა და ა.შ  */
+td:nth-child(even) {
     background-color: blue;
 }
 
 
+/* აქ კი ერთად გავსტილე 3 ელემენტი table,th,td მივანიჭე border ის ზომები,სისქე,ფერი   */
+table,
+th,
+td {
+    border: 3px solid black;
+}
 
+td,
+th {
+    width: 120px;
+    height: 55px;
+    font-size: 24px;
+}
