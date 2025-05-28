@@ -1,0 +1,38 @@
+body{
+    background-color: wheat;
+}
+
+#dv1{
+    
+    border: 1px solid:black;
+    width: 510px;
+    height: 400px;
+    background-color:white;
+}
+
+ 
+#p1{
+    
+    text-align: end;
+}
+
+#h1{
+
+    
+    font-size: x-large;
+
+    text-align: end;
+}
+
+#img1 img{
+    position: relative;
+  top: -110=px;
+    width: 280px;
+    height: 400px;
+}
+
+
+
+
+
+
