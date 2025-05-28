@@ -39,6 +39,20 @@
 
 
 # https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/python
+# def create_phone_number(n):
+#     result=""
+#     for i in n:
+#         result+=str(i)
+#     return f"({result[0:3]}) {result[3:6]}-{result[6:10]}"
 
 
 # https://www.codewars.com/kata/517abf86da9663f1d2000003/train/python
+
+# new_text = text.replace("_", "-")
+#     words=new_text.split("-")
+#     result=words[0]
+    
+#     for word in words[1:] :
+#         result += word.capitalize()
+        
+#     return result
