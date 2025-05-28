@@ -26,9 +26,25 @@ body{
 
 #img1 img{
     position: relative;
-  top: -110=px;
-    width: 280px;
+    top: -303px;
+    width: 300px;
     height: 400px;
+}
+
+#p2{
+    text-align: end;
+}
+
+#price{
+    font-size: x-large;
+    color: green;
+    text-align: end;
+}
+
+#btn1{
+    background-color: green;
+    color: white;
+    text-align: end;
 }
 
 
