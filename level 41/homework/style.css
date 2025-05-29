@@ -1,3 +1,5 @@
+
+
 body{
     background-color: wheat;
 }
@@ -5,50 +7,65 @@ body{
 #dv1{
     
     border: 1px solid:black;
-    width: 510px;
+    border-radius:6px;
+    width: 550px;
     height: 400px;
     background-color:white;
 }
 
  
 #p1{
-    
-    text-align: end;
+    margin-left: 330px;
+    position: relative;
 }
 
 #h1{
 
-    
+    margin-left: 330px;
     font-size: x-large;
-
-    text-align: end;
+    
 }
 
 #img1 img{
     position: relative;
-    top: -303px;
+    top: -304px;
     width: 300px;
     height: 400px;
 }
 
 #p2{
-    text-align: end;
+    margin-left: 330px;
 }
 
 #price{
+    margin-left: 340px;
     font-size: x-large;
-    color: green;
-    text-align: end;
+    color:#04AA6D;
+
 }
 
 #btn1{
-    background-color: green;
-    color: white;
-    text-align: end;
+    margin-left: 330px;
+   background-color: #04AA6D;
+
+    
+}
+
+#p4{
+    margin-top: -42px;
+    text-decoration: line-through;
+    color: gray;
+    font-size: small;
+    margin-left: 450px;
+    
 }
 
 
-
-
+#main1{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    
+}
 
 
