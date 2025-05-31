@@ -2,105 +2,104 @@
 
 
 
-body{
-    background-color:  hsl(217, 54%, 11%)
+body {
+    background-color: hsl(217, 54%, 11%)
 }
 
-#div1{
+#div1 {
     border: 4px solid hsl(216, 50%, 16%);
     border-radius: 8px;
-    box-shadow: 0 20px 30px  hsl(215, 51%, 70%);
+    box-shadow: 0 20px 30px hsl(215, 51%, 70%);
     border: none;
     width: 350px;
     height: 550px;
 }
 
-#img1 img{
-     display: block;
+#img1 img {
+    display: block;
     margin-top: 30px;
     margin-left: 38px;
     width: 270px;
     height: 220px;
     border-radius: 8px;
     object-fit: cover;
-    
+
 }
 
-#img1 img:hover{
+#img1 img:hover {
     cursor: pointer;
-    
-    
+
+
 }
 
-#texts h1{
+#texts h1 {
     padding-left: 30px;
     font-size: large;
     font-family: Roboto;
-     color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
 }
 
-#texts h1:hover{
+#texts h1:hover {
     cursor: pointer;
-    color:hsl(178, 100%, 50%) ; ;
+    color: hsl(178, 100%, 50%);
+    ;
 }
 
-#texts p:nth-child(2){
+#texts p:nth-child(2) {
     font-family: Roboto;
     padding-left: 35px;
-    color:  hsl(215, 51%, 70%);
+    color: hsl(215, 51%, 70%);
 }
 
-#texts p:nth-child(3){
+#texts p:nth-child(3) {
     padding-left: 35px;
     color: hsl(178, 100%, 50%);
 
 }
 
-#texts p:nth-child(4){
+#texts p:nth-child(4) {
     color: hsl(215, 51%, 70%);
     padding-left: 230px;
     margin-top: -32px;
-    
-    
+
+
 }
 
-#texts p:nth-child(5){
+#texts p:nth-child(5) {
     height: 2px;
-  background-color: hsl(215, 32%, 27%);
-  margin-top: 20px
-
+    background-color: hsl(215, 32%, 27%);
+    margin-top: 20px
 }
 
-#texts p:nth-child(8){
-    color: hsl(215, 51%, 70%);;
+#texts p:nth-child(8) {
+    color: hsl(215, 51%, 70%);
+    ;
     padding-left: 70px;
     margin-top: -36px;
-    
-    
+
+
 }
 
-#texts p:nth-child(7){
+#texts p:nth-child(7) {
     color: white;
     padding-left: 185px;
     margin-top: -30px;
 
 }
 
-#texts p:hover:nth-child(7){
+#texts p:hover:nth-child(7) {
     cursor: pointer;
-    color:hsl(178, 100%, 50%) ;
+    color: hsl(178, 100%, 50%);
 }
 
-#img2 img{
+#img2 img {
     padding-top: 20px;
     padding-left: 10px;
     width: 50px;
 }
 
-#main{
+#main {
     display: flex;
     justify-content: center;
     padding-top: 70px;
 }
-
-
