@@ -44,14 +44,18 @@ h1{
 }
 
 #btn1 img{
-    margin-left: -100px;
+    margin-left: -120px;
     width: 40px;
 
 }
 
 #btn1 p{
     font-family: Red Hat Display;
-    font-weight: 700;
+    font-weight: 800;
     margin-top: -40px;
     margin-left: 20px;
+}
+
+#btn1 h5{
+   margin-left: -50px;
 }
