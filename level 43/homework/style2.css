@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
+    
     background-color: hsl(216, 12%, 8%);
 }
 
@@ -41,6 +42,7 @@ body{
     width: 40px;
     height: 35px;
     margin-left: 28px;
+    cursor: pointer;
 }
 
 #btn2 button{
