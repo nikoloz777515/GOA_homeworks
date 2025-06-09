@@ -1,133 +1,237 @@
+/* აქ გადმოვიტანე ტექსტის სტილი */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* აქ  გასასტილად კლასით გამოვიძახე logo-header */
+.logo-header {
 
-/* აქ body გავუწერე უკანა მხრის ფერად violet და მთლიანი ეკრანის უკანა ფერი იქნება violet ფერი */
-body{
-    font-family:"Roboto";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  /* აქ გავუწერე display flex  */
+  display: flex;
+
+  /* აქ ყველა logo-header ში მოთავსებული ელემენტები გადმოვა ცენტრში   align-items მეშვეობით*/
+  align-items: center;
 }
 
+/* აქ  გასასტილად კლასით გამოვიძახე logo */
 .logo {
+
+    /* და გავუწერე სიმაღლე 50 პიქსელი */
     height:50px;
 }
 
+/* აქ  გასასტილად კლასით გამოვიძახე name */
 .name {
+
+    /* და მივანიჭე შავი ფერი */
     color: black;
 }
 
+/* აქ ul  element selector ით გამოვიძახე  */
 ul {
+    /* აქ გავუწერე list-style none */
     list-style:none;
+
+    /* აქ გავფლექსე */
     display:flex;
+    /* აქ დაშორება გავუწერე 20 პიქსელი გაპით */
     gap: 20px
 }
 
+/* აქ body  element selector ით გამოვიძახე  */
 body {
-    font-family:'Roboto';
-    background: linear-gradient(to bottom, #ffffff, #e9eff5);
+    /* ფონთი-font */
+    font-family:'Roboto'
 }
 
+/* აქ header  element selector ით გამოვიძახე  */
 header {
+
+    /* აქ გავფლექსე */
     display: flex;
+
+    /* აქ justify-content ით გავუწერე space-between და ელემენტებს  ჰორიზონტალურად თანაბრად გაადაწილებს  */
     justify-content: space-between;
+
+    /* აქ alig-items გავუწერე და გადავიტანე  header ში ჩასმული ელემენტები ცენტრში */
     align-items: center;
+
+    /* აქ padding გავუწერე */
     padding: 10px 20px;
+
+    /* აქ უკანა მხრის ფერად მივანიჭე ფერი */
     background-color: #f8f9fa;
+
+    /* აქ ჩრდილები გავუკეთე */
     box-shadow: 0 2px  5px rgba(0, 0, 0, 0.1) 
 }
 
-
+/* აქ  nav  element selector ით გამოვიძახე და nav ში მოთავსებული a თგიც */
 nav a {
+    /* აქ ტექსტის ზომა გავუწერე */
     font-size:large;
+
+    /* აქ ტექსტის დეკორაციად არფერი */
     text-decoration:none;
+
+    /* აქ ფერად გავუწერე შავი */
     color:black;
+
+    /* და ტექსტის სისქე გავამუქე bold ის მეშვეობით */
     font-weight: bold;
 }
 
+/* აქ a თეგს გავუკეთე hover ანუ მაგ ელემენტზე შეხებისას იქნება რაღაც  */
 a:hover {
+  /* აქ გავუწერე ფერი   */
   color: #007bff;
+
+  /* აქ ტექსტის დეკორაციად გავუწერე underline ანუ დაბლა გაესვას ხაზი*/
   text-decoration: underline;
+
+  /* აქ კი გავუწერე დრო რამდენ ხანში უნდა მოხდეს ეგ მოქმედება */
   transition:0.5s;
 }
 
-
+/* აქ main element selector ით გამოვიძახე  */
 main {
+
+    /* გავუწერე დაშორებები  მარგინი 0პიქსელი პადინგიც 0 პიქსელი */
     margin:0px;
-    padding: 0px;
+    padding:0px;
 }
 
-
-/* აქ აიდით გამოვიძახე ელემენტი და გავუწერე კუთნილებები */
-#first{
-    /* შევუქმენი საზღვარი სისქე გავუწერე 6 პიქსელი და ფერად გავუწერე შავი ფერი */
-   border: 1px solid grey;
-    background-color: white;
-   /* აქ კი საზღვრის სიმრგვალე გავუწერე 6 პიქსელი და 6 ოიქსელით მომგრვალდება კუთხეები */
-   border-radius: 6px;
-
-   /* აქ გავუქრე საზღარი */
-   border: none;
-   /* აქ გავუწერე ჩრდილები და ჩრდილის ფერი */
-   box-shadow: 0px 2px 4px black;
-
-   /* აქ სიგანე გავუწერე */
-    width: 750px;
-
-    /* აქ სიმაღლე გავუწერე */
-    height: 670px;
-
-    /* აქ კი გავუწერე ovwerflow hidden ანუ თ რაიმე ელემენტი გადაკვეთავდა საზღარს ეგ დაიმალებოდა */
-    overflow: hidden;
-}
-
-/* აქ დავიწყე უკვე ფტოს გასტილვა აიდიდს საშუალებით */
-#img1 img{
-    margin-top: 20px;
-    /* აქ გავუწერე სიგანე */
-    width: 500px;
-    /* აქ კი გავუწერე სიმაღლე */
-    height: 350px;
-    /* აქ კი გავუკეთე საზღვრების მომრგვალება */
-    border-radius: 6px;
-
-}
-
-/* აქ დავიწყე უკვე h1 გასტილვა აიდით */
-#text1 {
-    /* აქ გავუწერე ტექსტის ფერი */
-    color: skyblue;
-    /* აქ გავუწერე დაშორება ზემოდან -350 პიქსელი */
-    margin-top: -350px;
-    /* აქ ტექსტის სტილი გავუკეთე */
-    font-family:Inter;
-    /* აქ კი ტექსტი გადავიტანე ცენტრში */
-    text-align: center;
-}
-
-/* აქ უკვე ვიწყებ პარაგრაფის გასტილვას აიდით */
-#text2{
-    /* აქ გავუწერე ზემოდან დაშორება 270 პიქსელი */
-    padding-top: 300px;
-    /* აქ ტექსტის სტილი */
-    font-family: Roboto;
-    /* აქ ტექსტის სიმუქე/სისქე */
-    font-weight: 700;
-    /* აქ კი ტექსტის ზომა  */
-    font-size: 23px;
-    /* აქ კი ტექსტი გადმოვიტანე ცენტრში */
-    text-align: center;
-}
-#main{
-    margin-top: 20px;
+/* აქ კლასით გამოვიძახე header  */
+.header {
+    /* აქ გავფლექსე */
     display: flex;
+
+    /* აქ justify-content გადმოვიტანე ცენტრში */
     justify-content: center;
-    text-align: center;
 }
 
+/* აქ კლასით გამოვიძახე reasons */
+.reasons {
+    /* აქ გავფლექსე */
+    display:flex;
 
+    /* და align-items საშუალებით გადავიტანე ცენტრში ელემენტები */
+    align-items: center;
+}
 
+/* აქ img reasons იდან class ით გამოვიძახე  */
+.reasons img{
 
+    /* აქ გავუწერე სიგანე */
+    width:250px;
 
+    /* და აქ მარგინი 0 და 25 პიქსელი  ჰორიზონტალურად და ვერტიკალურად*/
+    margin:0px 25px
 
+}
+/*  აქ გამოვიძახე claas ით p  reason იდან  */
+.reasons p {
 
+    /* და გავუწერე ტექსტის სიმუქე 400 */
+    font-weight: 400;
+}
 
+/* აქ გამოვიძახე about us class ით */
+.aboutus {
 
+    /* გავუწერე მარგინი ჯერ 0 და შემდეგ ავტომატური */
+    margin: 0 auto;
+
+    /* გავუწერე ჩრდილები */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+    /* გავუწერე სიგანე 50% */
+    width: 50%;
+
+    /* და სიმაღლე ავტომატური */
+    height: auto; 
+
+    /* გავფლექსე */
+    display: flex;
+
+    /* აქ გავუწერე wrap ანუ ელემენტებს ადგილი თარყოფნით შემდეგ ხაზზე გადავიდნენ */
+    flex-wrap: wrap;
+
+    /* გადავიტანე ცენტრში */
+    justify-content: center;
+
+    /* ამით კი ყველა ელემენტი იქნება კონტეინერის ზედა მხარეზე */
+    align-items: flex-start;
+
+    /* და ამით გავუწერე საზღვრის სიმრგვალე 15 პიქსელი */
+    border-radius:15px
+}
+
+/* აქ გამოვიძახე h2 tag selector ით */
+h2 {
+
+    /* და გავუწერე მარგინით მარცხნიდან დაშორება 0 პიქსელი  */
+    margin-left: 0; 
+}
+
+/* აქ კლასით გამოვიძახე list  */
+.list {
+    /* აქ გადავიტანე ელემენტები მარცხენა მხარეს */
+    text-align: left;
+
+    /* აქ გაფლექსე */
+    display: flex;
+
+    /* აქ გავუკეთე სვეტური განლაგება ანუ იქნებიან ერთმანეთის ქვეშ */
+    flex-direction: column;
+
+    /* ამით კი ყველა ელემენტი იქნება კონტეინერის ზედა მხარეზე */
+    align-items: flex-start;
+
+    /* აქ პადინგით გავუწერე დაშორება 20 პიქსელი */
+    padding: 20px;
+}
+
+ /* აქ  p გამოვიძახე lis იდან კლასის მეშვეობით  */
+.list p {
+
+    /* აქ ,არგინი გავუწერე 5 პიქსელი */
+    margin: 5px 
+}
+ 
+/* აქ about-right გამოვიძახე კლასის მეშვეობით */
+.about-right {
+  /* გავუწერე flex 1  ანუ კონტეინერში ელემენტები გადანაწილდება თანაბარ ფართბზე */
+  flex: 1;
+
+  /* აქ გავუწერე min-width 250px ანუ ელკემენტი არ ჩამოვიდეს 250 პიქსელზე ნაკლებზე */
+  min-width: 250px;
+
+  /* აქ კი დაშორება მარცხნიდან გავუწერე 15 პიქსელი */
+  padding-left: 15px;
+}
+
+/* აქ h2 გამოვიძახე aboutus-right იდან კლასის მეშვეობით */
+.about-right h2 {
+  /* აქ დაშორებები გავუწერე 20 და 150 პიქსელი */
+  padding:20px 150px;
+
+  /* და აქ ფერად მივანიჭე შავი */
+  color: black;
+}
+/* აქ კლასით გამოვიძახე impact-list */
+.impact-list {
+
+  /* აქ გავუწერე პადინგი 0 პიქსელი  */
+  padding: 0;
+}
+ 
+/* აქ impact-list იდან გამოვიძახე li  */
+.impact-list li {
+  /* აქ დაბლიდან მარგინი გავუწერე 5 პიქსელი */
+  margin-bottom: 5px;
+
+  /* ტექსტის ზომად კი გავუწერე 15 პიქსელი */
+  font-size: 15px;
+
+  /* და აქ ფერად გავუწერე შავი */
+  color: black;
+} 
