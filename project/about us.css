@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* აქ body გავუწერე უკანა მხრის ფერად violet და მთლიანი ეკრანის უკანა ფერი იქნება violet ფერი */
 body{
-    background-color: violet;
+    font-family:"Roboto";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 }
 
+.logo {
+    height:50px;
+}
 
 .name {
-    color:violet;
+    color: black;
 }
 
 ul {
@@ -18,38 +22,52 @@ ul {
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 0px;
+    font-family:'Roboto';
+    background: linear-gradient(to bottom, #ffffff, #e9eff5);
 }
 
 header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 30px;
-    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px  5px rgba(0, 0, 0, 0.1) 
 }
+
 
 nav a {
     font-size:large;
     text-decoration:none;
-    color:violet;
+    color:black;
     font-weight: bold;
+}
+
+a:hover {
+  color: #007bff;
+  text-decoration: underline;
+  transition:0.5s;
+}
+
+
+main {
+    margin:0px;
+    padding: 0px;
 }
 
 
 /* აქ აიდით გამოვიძახე ელემენტი და გავუწერე კუთნილებები */
 #first{
     /* შევუქმენი საზღვარი სისქე გავუწერე 6 პიქსელი და ფერად გავუწერე შავი ფერი */
-   border: 6px solid black;
-
+   border: 1px solid grey;
+    background-color: white;
    /* აქ კი საზღვრის სიმრგვალე გავუწერე 6 პიქსელი და 6 ოიქსელით მომგრვალდება კუთხეები */
    border-radius: 6px;
 
    /* აქ გავუქრე საზღარი */
    border: none;
    /* აქ გავუწერე ჩრდილები და ჩრდილის ფერი */
-   box-shadow: 0px 20px 30px red;
+   box-shadow: 0px 2px 4px black;
 
    /* აქ სიგანე გავუწერე */
     width: 750px;
