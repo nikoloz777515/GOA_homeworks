@@ -235,3 +235,10 @@ h2 {
   /* და აქ ფერად გავუწერე შავი */
   color: black;
 } 
+
+.aboutus{
+    /* აქ კი გავუკეთე გადასვლები და გადასვლის დრო */
+    transform: translateX(-450px);
+    transform: translateX(20px);
+    transition: 1s;
+}
