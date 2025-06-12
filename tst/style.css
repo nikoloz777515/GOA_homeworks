@@ -5,3 +5,12 @@ body{
 #ch{
     font-size: xx-large;
 }
+ @media screen and(min-width:100px) and(max-width:300px){ 
+#main1{
+    text-align: end;
+    flex-wrap: wrap;
+    color: blue;
+}
+    
+ }
+
