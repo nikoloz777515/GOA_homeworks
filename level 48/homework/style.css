@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color:hsl(221, 100%, 96%);
+    font-family: Hanken Grotesk;
+}
+
 #box1{
+    
+    background-color: hsl(0, 0%, 100%);
     border: 2px solid black;
+    border: none;
     width: 600px;
-    height: 450px;
+    height: 430px;
     border-radius: 8px;
     position: relative;
    overflow: hidden;
 }
 
 #box2{
- background-color: rgba(0, 0, 255, 0.696);
+ background-color: hsl(241, 81%, 54%);
     width: 50%;
     height: 100%;
     border-radius: 8px 0 0 8px;
@@ -38,8 +49,15 @@
 }
 
 #txt p{
-
+    color: hsl(0, 100%, 67%);
+    font-weight: 600;
+    font-size: 17px;
     margin-top: -20px;
+}
+
+#txt span{
+    margin-left: 20px;
+    color: black;
 }
 
 #sec3 button{
@@ -58,11 +76,110 @@
 }
 
 #sec3 p{
-    
+    color:  hsl(39, 100%, 56%);
+    font-weight: 600;
+    font-size: 17px;
     margin-top: -20px;
 }
 #sec3 span{
-    margin-right: 10px;
-    color:yellow;
-    font-size: 23px;
+    margin-left: 20px;
+    color: black;
+    
+}
+
+
+#sec4 button{
+    margin-top: 20px;
+    margin-left: 330px;
+     width: 220px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: hsla(166, 100%, 37%, 0.215);
+}
+
+#sec4 img{
+    margin-top: 10px;
+    margin-right: 180px;
+}
+
+#sec4 p{
+     color:  hsl(166, 100%, 37%);
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: -20px;
+}
+#sec4 span{
+    color: black;
+    margin-left: 25px;
+}
+
+#sec5 button{
+    margin-top: 20px;
+    margin-left: 330px;
+     width: 220px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color:  hsla(241, 100%, 89%, 0.338);
+}
+
+#sec5 img{
+    margin-right: 180px;
+    width: 25px;
+    margin-top: 10px;
+}
+
+#sec5 p{
+    color:  hsl(234, 85%, 45%);
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: -20px;
+}
+
+#sec5 span{
+    color:black;
+    margin-left: 25px;
+}
+
+#sec6 button{
+    margin-top: 20px;
+    margin-left: 330px;
+     width: 220px;
+    height: 45px;
+    border-radius: 26px;
+    background-color: hsl(224, 30%, 27%)
+}
+
+#sec6 p{
+    margin-top: 8px;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+
+#circle{
+    border: 3px solid black;
+    border-radius: 70px;
+    width: 150px;
+    height: 145px;
+    box-shadow: 0 20px 30px ;
+    border: none;
+    margin-left: 65px;
+    margin-top: -330px;
+    color: white;
+}
+
+#circle h1{
+    margin-left: 30px;
+    margin-top:px;
+    color:red;
+}
+
+
+#main{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
 }
