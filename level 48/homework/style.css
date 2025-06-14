@@ -160,19 +160,39 @@ body{
 
 
 #circle{
+    margin-left: 65px;
     position: relative;
-
-
-    width: 70px;
-    height: 70px;
-    background-color: red;
+    width: 170px;
+    height: 160px;
+    border-radius: 100px;
+    background-color: blue;
+    box-shadow:  0 20px 30px blue;
     z-index: 100;
 }
 
 #circle h1{
-    margin-left: 30px;
-    margin-top:10px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top:15px;
     color:white;
+}
+
+
+
+#circle span{
+    color:  hsla(0, 0%, 100%, 0.689);
+    margin-top: 300px;
+    font-size: large;
+}
+
+#circle h2{
+    margin-top: 45px;
+    color: white;
+}
+
+#circle h6{
+    
+    margin-top: -10px;
 }
 
 
