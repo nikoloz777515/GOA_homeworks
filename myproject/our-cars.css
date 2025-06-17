@@ -1,0 +1,82 @@
+#home{
+    background-color: silver;
+    height: 120px;
+}
+
+#home img{
+    width: 110px;
+    display: flex;
+    justify-content: right 70px;
+    
+}
+
+#home a{
+    text-decoration: none;
+    margin-top: -70px;
+    font-size: xx-large;
+}
+
+nav{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+
+
+
+
+
+#our-cars{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-evenly;
+    margin-top: 140px;
+}
+
+
+#Cls{
+    border: 2px solid black;
+    width: 430px;
+    height: 550px;
+}
+
+#Cls h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+#Cls img{
+    margin-top: 50px;
+    width: 430px;
+}
+
+
+#Cls:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    
+}
+
+#s{
+    border: 2px solid black;
+    width: 430px;
+    height: 600px;
+}
+
+#l{
+    border: 2px solid black;
+    width: 430px;
+    height: 550px;
+}
+
+#l img{
+    margin-top: 100px;
+    width: 430px;
+}
+
+#l:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    
+}
