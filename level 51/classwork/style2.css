@@ -1,0 +1,32 @@
+#navi{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+
+#navi h1{
+    margin-left: 10px;
+}
+
+#navi header{
+    margin-right: 0px;
+    background-color: red;
+    width: 4000px;
+    margin-left: 40px;
+}
+
+#navi a{
+    margin: 15px;
+    text-decoration: none;
+}
+
+#navi button{
+    background-color: violet;
+    color: white;
+    border-radius: 20px;
+}
+
+#dv2 h1{
+    
+    color: red;
+}

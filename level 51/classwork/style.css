@@ -1,0 +1,39 @@
+#main{
+    display: flex;
+    justify-content: center;
+    top: -50px;
+}
+
+#first{
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    
+}
+#first img{
+    position: relative;
+    top: 90px;
+    left: 80px;
+    width: 190px;
+}
+
+#red{
+    background-color: red;
+    position: absolute;
+    border: 2px solid red;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    margin-left: 240px;
+    top: 70px;
+    
+}
+#red p{
+    position: absolute;
+    left: 15px;
+    color: white;
+    font-size: xx-large;
+    margin-top: 8px;
+    text-align: center;
+    
+}
