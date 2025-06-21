@@ -1,0 +1,49 @@
+#main{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+#first{
+    border: 3px solid black;
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    
+}
+
+#dv{
+    position: relative;
+    border: 3px solid red;
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    top: 170px;
+    left: 140px;
+    background-color: red;
+}
+
+#dv h1{
+    position: relative;
+    text-align: center;
+    top: 50px;
+    color: white;
+}
+
+#sec{
+    position: relative;
+    border: 3px solid red;
+    width: 600px;
+    height: 600px;
+}
+
+#ab{
+    position: absolute;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    left: 90px;
+
+}
+
