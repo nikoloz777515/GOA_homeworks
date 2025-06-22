@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 22, 22);
+}
+
+
+div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#circle{
+    border:14px solid rgba(0, 128, 0, 0.779);
+    width: 115px;
+    height: 110px;
+    border-radius: 55px;
+    border-top: 14px solid rgb(47, 255, 82);
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+        
+        
+    }
+
+    50%{
+        transform: rotate(180deg);
+
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+
+}

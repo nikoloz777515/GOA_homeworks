@@ -1,19 +1,19 @@
-#main{
+#main {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
 
-#first{
+#first {
     border: 3px solid black;
     width: 600px;
     height: 600px;
     background-color: blue;
-    
+
 }
 
-#dv{
+#dv {
     position: relative;
     border: 3px solid red;
     width: 300px;
@@ -24,21 +24,21 @@
     background-color: red;
 }
 
-#dv h1{
+#dv h1 {
     position: relative;
     text-align: center;
     top: 50px;
     color: white;
 }
 
-#sec{
+#sec {
     position: relative;
     border: 3px solid red;
     width: 600px;
     height: 600px;
 }
 
-#ab{
+#ab {
     position: absolute;
     border: 2px solid black;
     width: 300px;
@@ -46,4 +46,3 @@
     left: 90px;
 
 }
-
