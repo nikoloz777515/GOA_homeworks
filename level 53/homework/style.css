@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+
+@media (max-width:768px){
+    
+    *{  
+        
+        margin: 0px;
+        padding: 0px;
+        font-family:Space Mono;
+        font-weight: 700;
+        
+    }
+    body{
+        background-color: hsl(185, 41%, 84%);
+    }
+    #fr{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       
+    }
+
+    #fr h4{
+        position: relative;
+        top: 30px;
+        color: hsl(183, 100%, 15%);
+        font-size: 21px;
+    }
+
+    #sec{
+        position: relative;
+        top: 90px;
+        border: 2px solid white;
+        border-radius: 15px;
+        height: 768px;
+        width: 768px;
+        background-color: white;
+    }
+
+    #sec h3{
+        display: inline;
+        position: relative;
+        top: 30px;
+        left: 25px;
+        color:  hsl(186, 14%, 43%);
+    }
+
+
+    #sec img{
+        position: relative;
+       display: flex;
+       left: 17px;
+       top: 15px ;
+       
+       
+       
+    }
+
+    #sec button{
+        position: relative;
+        border:none;
+        border-radius: 5px;
+        top: 90px;
+        right: 20px;
+        width: 300px;
+        height: 50px;
+    }
+
+    #sec h1{
+        position: relative;
+        bottom: 13px;
+        left: 90px;
+        color: hsl(183, 100%, 15%);
+        font-size: 25px;
+    }
+
+
+    #th{
+        
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        top: 60px;
+    }
+
+    #th #bt1{
+        background-color:  hsl(183, 100%, 15%);
+        color: white;
+        top: 80px;
+        right: 120px;
+        width: 150px;
+    }
+
+      #th #bt1 h1{
+        top: 1px;
+        left: 8px;
+        color: hsl(0, 100%, 100%);
+    }
+
+
+    #th #bt2{
+        background-color:  hsl(183, 100%, 15%);
+        top: 79px;
+        right: 90px;
+        width: 150px;
+    }
+
+    #bt2 h1{
+        left: 8px;
+        top: 1px;
+        color:  hsl(0, 100%, 100%);
+    }
+
+
+
+   
+}
