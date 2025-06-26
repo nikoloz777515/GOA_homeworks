@@ -6,7 +6,7 @@
 @media (max-width:768px){
     
     *{  
-        
+        position: relative;
         margin: 0px;
         padding: 0px;
         font-family:Space Mono;
@@ -35,7 +35,7 @@
         top: 90px;
         border: 2px solid white;
         border-radius: 15px;
-        height: 768px;
+        height: 1368px;
         width: 768px;
         background-color: white;
     }
@@ -43,8 +43,8 @@
     #sec h3{
         display: inline;
         position: relative;
-        top: 30px;
-        left: 25px;
+        top: 0px;
+        left: 190px;
         color:  hsl(186, 14%, 43%);
     }
 
@@ -63,16 +63,18 @@
         position: relative;
         border:none;
         border-radius: 5px;
-        top: 90px;
+        top: 60px;
         right: 20px;
-        width: 300px;
+        left: 150px;
+        width: 200px;
         height: 50px;
     }
 
     #sec h1{
         position: relative;
         bottom: 13px;
-        left: 90px;
+        
+        left: 40px;
         color: hsl(183, 100%, 15%);
         font-size: 25px;
     }
@@ -83,14 +85,15 @@
         position: relative;
         display: flex;
         flex-direction: row;
-        top: 60px;
+        top: 80px;
     }
 
     #th #bt1{
+        position: relative;
         background-color:  hsl(183, 100%, 15%);
         color: white;
         top: 80px;
-        right: 120px;
+        left: 80px;
         width: 150px;
     }
 
@@ -105,6 +108,7 @@
         background-color:  hsl(183, 100%, 15%);
         top: 79px;
         right: 90px;
+        left: 90px;
         width: 150px;
     }
 
@@ -114,7 +118,155 @@
         color:  hsl(0, 100%, 100%);
     }
 
+    #th #bt3{
+        background-color:  hsl(183, 100%, 15%);
+        color: red;
+        top: 150px;
+        left: -20px;
+        width: 150px;
+    }
+
+
+    #bt3 h1{
+        left: 8px;
+        top: 1px;
+        color:  hsl(0, 100%, 100%);
+    }
+
+    #th #bt4{
+        background-color:  hsl(172, 67%, 45%);
+        color: white;
+        top: 150px;
+        left: -255px;
+        width: 150px;
+    }
+
+    #bt4 #h2{
+        left: 8px;
+        top: 1px;
+        color:  hsl(0, 100%, 100%);
+    }
+
+    #th #bt5{
+         background-color:  hsl(183, 100%, 15%);
+        top: 220px;
+        left: -365px;
+        width: 150px;
+    }
+
+    #bt5 h1{
+        left: 8px;
+        top: 1px;
+        color:  hsl(0, 100%, 100%);
+    }
+
+    #th #bt6{
+        
+        top: 220px;
+        left: -350px;
+        width: 150px;
+    }
+
+    #bt6 h1{
+        position: relative;
+        top: 1px;
+        text-align: center;
+        left: -1px;
+        color: hsl(183, 100%, 15%);
+    }
+
+       #nm h4{
+        position: relative;
+        top: 302px;
+        left: 180px;
+        color:  hsl(186, 14%, 43%);
+    }
+
+    #nm button{
+        position: relative;
+        top: 307px;
+        left: 188px;
+        width: 245px;
+        height: 40px;
+    }
+
+    #nm img{
+        position: relative;
+        width: 17px;
+        top: 10px;
+        left: 11px;
+    }
+
+    #nm h1{
+        top: -22px;
+        left: 100px;
+        font-size: 30px;
+        color:  hsl(183, 100%, 15%);
+    }
+    #btn button{
+        left: 190px;
+        top: 310px;
+        width: 250px;
+        height: 200px;
+        background-color:  hsl(183, 100%, 15%);
+    }
+
+    #btn h4{
+        color:hsl(189, 47%, 97%);
+        font-weight: 800;
+        font-size: 15px;
+        right: 60px;
+        bottom: 50px;
+    }
+
+    #btn span{
+        right: 5px;
+        color: hsl(184, 14%, 56%);
+    }
+
+    
+
+    #btn h3{
+        position: relative;
+        left: -80px;
+        top: -35px;
+        color: hsl(189, 47%, 97%);
+    }
+
+    #amnt h1:nth-child(1){
+        color: hsl(172, 67%, 45%);
+        position: relative;
+        top: 120px;
+        left: 335px;
+    }
+
+    #amnt h1:nth-child(2){
+        color: hsl(172, 67%, 45%);
+        position: relative;
+        top: 140px;
+        left: 325px;
+    }
+
+    #btt button{
+        background-color:  hsl(172, 67%, 45%);;
+        left: 215px;
+        top: 170px;
+    }
+
+    #btt h1{
+        top: 0px;
+        left: 3px;
+    }
+
+
+
+    }
+
+    
+
+   
+        
+
 
 
    
-}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    font-family: League Spartan;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 20px;
+}
+
+#dv1 p {
+    font-size: x-large;
+    color: hsl(303, 10%, 53%);
+}
+
+#dv1 h1 {
+    font-weight: 900;
+    font-size: 70px;
+    color: hsl(300, 43%, 22%);
+}
+
+#dv2, #dv3, #dv4 {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    background-color: hsl(300, 43%, 22%);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#dv2 img,
+#dv3 img,
+#dv4 img {
+    width: 60px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+#dv2 h1,
+#dv3 h1,
+#dv4 h1 {
+    color: hsl(300, 24%, 96%);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+#dv2 h2,
+#dv3 h2,
+#dv4 h2 {
+    color: hsl(333, 80%, 67%);
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#dv2 h3,
+#dv3 h3,
+#dv4 h3 {
+    text-align: left;
+    line-height: 1.4;
+    font-weight: 500;
+    color: hsl(300, 24%, 96%);
+}
+
+#main1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#dv5, #dv6, #dv7 {
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#dv5 h1, #dv6 h1, #dv7 h1 {
+    font-size: 16px;
+    color: hsl(300, 43%, 22%);
+}
+
+#dv5 img, #dv6 img, #dv7 img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 600px) {
+    #dv1 h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #dv1 p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #main1, #dv5, #dv6, #dv7 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #dv2, #dv3, #dv4 {
+        padding: 15px;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
