@@ -3,5 +3,5 @@
  let hd =document.getElementById("hed")
  
 btn.addEventListener('click',function(){
-    hd.innerText = 'Hello dachi'
+    hd.innerText = 'Hello World!'
 })
