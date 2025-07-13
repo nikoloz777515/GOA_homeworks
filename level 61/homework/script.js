@@ -2,6 +2,6 @@
 
 let list = ['cars','Films','Games','Foods','People']
 
-for (let i = list;;) {
-    console.log(i)
+for (let i = 0; i < list.length; i++) {
+    console.log(list[i])
 }
