@@ -10,7 +10,7 @@
 
 document.getElementById('firstP').addEventListener("click", () => {
   const num1 = parseInt(prompt("enter first number:"))
-  const num2 = parseInt(prompt("enter socond number:"))
+  const num2 = parseInt(prompt("enter second number:"))
 
 
   const sum = num1 + num2;
@@ -20,17 +20,16 @@ document.getElementById('firstP').addEventListener("click", () => {
   }
 
   const answer = document.getElementById("answer")
-  output.innerHTML = `
+  answer.innerHTML = `
     <p>Sum: ${sum}</p>
-    <p>${num1} - ${checkNumber(num1)}</p>
-    <p>${num2} - ${checkNumber(num2)}</p>
+    <p>${num1} is ${checkNumber(num1)}</p>
+    <p>${num2} is ${checkNumber(num2)}</p>
   `
 })
 
 
 
-   
 
 
 
- 
+
