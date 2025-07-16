@@ -11,7 +11,7 @@ let index = 0
 let sentence = 'javaScript'
 let count = 0
 
-while(index  < sentence.length){
+while(index < sentence.length){
     if(sentence[index] === 'a'){
         count += 1
     }
@@ -19,3 +19,23 @@ while(index  < sentence.length){
 }
 
 console.log(`a repeat ${count} times`)
+
+
+
+
+
+
+
+
+let inde = 0
+let sentenc = 'javaScript'
+let coun = 0
+
+while(inde < sentenc.length){
+    if(sentenc[inde] === 'j'){
+        coun += 1
+    }
+    inde++
+}
+
+console.log(`j repeat ${coun} times`)

@@ -4,5 +4,8 @@ let number = [15]
 
 do{
     console.log('The number is ' + number)
+    
     number--
 }while(number >= 0);
+
+
