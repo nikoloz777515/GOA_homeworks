@@ -23,19 +23,3 @@ console.log(`a repeat ${count} times`)
 
 
 
-
-
-
-
-let inde = 0
-let sentenc = 'javaScript'
-let coun = 0
-
-while(inde < sentenc.length){
-    if(sentenc[inde] === 'j'){
-        coun += 1
-    }
-    inde++
-}
-
-console.log(`j repeat ${coun} times`)
