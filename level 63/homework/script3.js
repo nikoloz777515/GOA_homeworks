@@ -5,9 +5,9 @@ let num = [11,8.99,99]
 
 let sum = 0
 
-let arrow = (ctn) => {
-    for(let i = 0; i< ctn.length; i++){
-        sum+=ctn[i]
+let arrow = (count) => {
+    for(let i = 0; i< count.length; i++){
+        sum+=count[i]
     }
 }
 

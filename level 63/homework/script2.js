@@ -3,13 +3,13 @@
 
 
 
-let list = ['niko','ana','atuka','gio']
+let arr = ['niko','ana','atuka','gio']
 
 let string = ['niko','ana','atuka','gio','luka']
 
-let arrow = (string,list) =>{
+let arrow = (string,arr) =>{
         if(!list.includes(string)){
-            string.push(list)
+            string.push(arr)
         }
 
         
