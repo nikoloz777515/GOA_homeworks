@@ -1,32 +1,31 @@
 // 1) შექმენით Rock Paper Scissors პროექტი (შეგიძლიათ მოიძიოთ ინფორმაციაც), გაიაზრეთ კოდი
 
-let tools = ['rock','paper','scisors'];
+function game (userChoice){
+    let tools = ['rock','paper','scissories']
 
+    
 
-
- let button = document.getElementById("btn")
-
-
- let p = document.getElementById("P")
-
-
-function game () {
 
     let random = Math.floor(Math.random()*tools.length)
-    
-    let randomIndex = tools[random];
 
-    p.textContent = randomIndex
+    let computerChoice = tools[random];
+
+    let result = ""
+
+    if(computerChoice === userChoice){
+        result = "Draw"
+    }else if(userChoice === 'rock' && computerChoice === 'paper' ||
+    (userChoice === 'paper' && computerChoice === 'rock') ||
+    (userChoice === 'rock' && computerChoice === 'scissories')
+    ){
+        result = 'you win'
+    }else{
+        result = 'you lost'
+    }
+
+    document.getElementById('resu').innerHTML =`you chose <b>${userChoice}</b> <br> 
+    computer chose <b>${computerChoice}</b> <br>
+    result <strong>${result}</strong  you screw }`
     
     
 }
-
-let result = game();
-console.log(result)
-
-
-    p.textContent = result
-
-button.addEventListener("click",game)
-
-

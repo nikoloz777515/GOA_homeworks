@@ -1,0 +1,54 @@
+body {
+  background-image: url('https://previews.123rf.com/images/sergeymastepanov/sergeymastepanov1702/sergeymastepanov170200075/72172696-rock-paper-scissors-hand-game-pop-art-style-vector.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+button {
+  color: white;
+  background-color: red;
+  font-size: xx-large;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  top: 307px;
+  left: 50px;
+  
+ 
+ 
+}
+
+#resu {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 340px;
+  background: linear-gradient(to right, #00f, #800080, #8b1629);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+h1 {
+  font-size: 72px;
+  
+  font-weight:bold;
+  margin-top: 40px;
+  background: linear-gradient(to right, rgb(197, 41, 41), #800080, #088808);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
