@@ -25,7 +25,7 @@ function game (userChoice){
 
     document.getElementById('resu').innerHTML =`you chose <b>${userChoice}</b> <br> 
     computer chose <b>${computerChoice}</b> <br>
-    result <strong>${result}</strong  you screw }`
+    result <strong>${result}</strong  }`
     
     
 }
