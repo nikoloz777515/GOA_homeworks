@@ -1,12 +1,11 @@
 // 1) შექმენით Rock Paper Scissors პროექტი (შეგიძლიათ მოიძიოთ ინფორმაციაც), გაიაზრეთ კოდი
 
-let you = 0;
-let computer = 0;
+let you = 0
+let computer = 0
 
 function game (userChoice){
-    let tools = ['rock','paper','scissories']
 
-    
+    let tools = ['rock','paper','scissories']
 
 
     let random = Math.floor(Math.random()*tools.length)

@@ -35,7 +35,7 @@ for i in range(1, 255):
             else:
                 vendor = "MAC not found"
 
-            print(f"✅ IP: {ip} | Hostname: {hostname} | MAC: {mac} | Vendor: {vendor}")
+            print(f" IP: {ip} | Hostname: {hostname} | MAC: {mac} | Vendor: {vendor}")
 
         except Exception as e:
-            print(f"❌ IP: {ip} | Hostname: {hostname} | MAC/Vendor lookup failed: {e}")
+            print(f" IP: {ip} | Hostname: {hostname} | MAC/Vendor lookup failed: {e}")
