@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="fgg.css"> <!-- შენი სტილი -->
+</head>
+<body>
+
+<div class="calculator">
+  <h1>SPLITTER</h1>
+
+  <label>Bill</label>
+  <input type="number" id="bill" placeholder="0">
+
+  <label>Select Tip %</label>
+  <div class="tip-buttons">
+    <button onclick="setTip(5)">5%</button>
+    <button onclick="setTip(10)">10%</button>
+    <button onclick="setTip(15)">15%</button>
+    <button onclick="setTip(25)">25%</button>
+    <button onclick="setTip(50)">50%</button>
+    <input type="number" id="customTip" placeholder="Custom" onchange="setCustomTip()">
+  </div>
+
+  <label>Number of People</label>
+  <input type="number" id="people" placeholder="0">
+
+  <div class="results">
+    <div>
+      <p>Tip Amount <br> <span>/ person</span></p>
+      <h2>$<span id="tipPerPerson">0.00</span></h2>
+    </div>
+    <div>
+      <p>Total <br> <span>/ person</span></p>
+      <h2>$<span id="totalPerPerson">0.00</span></h2>
+    </div>
+  </div>
+
+  <button onclick="resetAll()">RESET</button>
+</div>
+
+<script src="ssn.js"></script>
+</body>
+</html>

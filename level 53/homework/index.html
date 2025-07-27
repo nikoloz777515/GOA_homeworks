@@ -17,24 +17,40 @@
 
     <div id="sec">
         <h3>Bill</h3>
-        <button><img src="./tip-calculator-app-main/images/icon-dollar.svg">
-            <h1>142.55</h1>
-        </button>
+<div id="bill-input">
+  <img src="./tip-calculator-app-main/images/icon-dollar.svg">
+  <input id="display" readonly>
+</div>
+
+        
 
         <div id="th">
             <h3>Select tip %</h3>
-            <button id="bt1"><h1>5%</h1></button>
 
 
-            <button id="bt2"><h1>10%</h1></button>
+        <div id="keys">
+            <button onclick="append('5')">5</button>
 
-            <button id="bt3"><h1>25%</h1></button>
 
-            <button id="bt4"><h2>15%</h2></button>
+            <button onclick="append('10')">10</button>
 
-            <button id="bt5"><h1>50%</h1></button>
+            <button onclick="append('25')">25</button>
+
+            <button onclick="append('15')">1</button>
+
+            <button onclick="append('50')">50</button>
 
             <button id="bt6"><h1>CUSTOM</h1></button>
+
+            <button onclick="calc()">=</button>
+
+            <button onclick="clearDis()">C</button>
+
+            </div>
+
+
+
+
 
             
         </div>
@@ -75,6 +91,6 @@
 
 
     
-    
+    <script src="script.js"></script>
 </body>
 </html>
