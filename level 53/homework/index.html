@@ -9,82 +9,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="fr">
-        <h4>
-            S P L I <br> T T E R
-        </h4>
-    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tip Calculator</title>
+  
+</head>
+<body>
 
-    <div id="sec">
-        <h3>Bill</h3>
-<div id="bill-input">
-  <img src="./tip-calculator-app-main/images/icon-dollar.svg">
-  <input id="display" readonly>
+<div id="fr">
+  <h4>S P L I <br> T T E R</h4>
 </div>
 
-        
-
-        <div id="th">
-            <h3>Select tip %</h3>
 
 
-        <div id="keys">
-            <button onclick="append('5')">5</button>
-
-
-            <button onclick="append('10')">10</button>
-
-            <button onclick="append('25')">25</button>
-
-            <button onclick="append('15')">1</button>
-
-            <button onclick="append('50')">50</button>
-
-            <button id="bt6"><h1>CUSTOM</h1></button>
-
-            <button onclick="calc()">=</button>
-
-            <button onclick="clearDis()">C</button>
-
-            </div>
+<div id="all">
 
 
 
 
+<div id="sec">
+  <h3>Bill</h3>
+  <div id="bill-input">
+    <input id="bill" type="number" placeholder="Enter bill amount          0">
+  </div>
 
-            
-        </div>
-
-        <div id="nm">
-           <h4>Number of people</h4>
-           
-           <button><img src="./tip-calculator-app-main/images/icon-person.svg">
-            <h1>5</h1>
-        </button>
-
-        </div>
-
-        <div id="btn"><button>
-        <h4>Tip Amount<br>
-        <span>/ person</span></h4>
-        <h3> Total<br><span>
-  / person</span></h3>
-
-    </button>
+  <div id="th">
+    <h3>Select tip %</h3>
+    <div id="keys">
+      <button onclick="setTip(5)">5%</button>
+      <button onclick="setTip(10)">10%</button>
+      <button onclick="setTip(15)">15%</button><br>
+      <button onclick="setTip(25)">25%</button>
+      <button onclick="setTip(50)">50%</button>
+      <input id="customTip" type="number" placeholder="Custom %" onchange="setCustomTip()" />
     </div>
+  </div>
 
-    <div id="amnt">
-        <h1>$4.27</h1>
-        <h1>$31.79</h1>
-    </div>
+  <div id="nm">
+    <h4>Number of people</h4>
+    <input  id="people" placeholder="Enter number of people ">
+  </div>
 
-    <div id="btt">
-        <button><h1>RESET</h1></button>
-    </div>
+  <div id="amnt">
+    <h1>Tip / person: $<span id="tipPerPerson">0.00</span></h1>
+    <h1>Total / person: $<span id="totalPerPerson">0.00</span></h1>
+  </div>
 
+  <div id="btt">
+    <button onclick="resetAll()"><h1>RESET</h1></button>
+  </div>
 
-
-    </div>
+  </div>
+</div>
 
     
     
