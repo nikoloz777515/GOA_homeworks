@@ -275,6 +275,16 @@ body{
      
 }
 
+#keys button{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#th #keys input{
+    background-color: ;
+}
+
     
 #all{
     border: 3px solid white;
@@ -301,7 +311,43 @@ body{
 #amnt h1{
     color:  hsl(0, 100%, 100%);
     position: relative;
-    bottom: 80px;
+    right: 40px;
+    bottom: 40px;
+    font-size: 18px;
+}
+
+#amnt #tipPerPerson{
+    position: absolute;
+    color: hsl(172, 67%, 45%);
+    left: 180px;
+    font-size: 40px;
+    top: -20px;
+}
+
+#amnt #prs{
+    position: relative;
+    left: 10px;
+    color:hsl(184, 14%, 56%);
+}
+
+#amnt h2{
+    font-size: 18px;
+    position: relative;
+    right: 35px;
+    bottom: 10px;
+    color: hsl(0, 100%, 100%);
+}
+
+#amnt #prs2{
+    color: hsl(184, 14%, 56%);
+}
+
+#amnt #totalPerPerson{
+    position: absolute;
+    color: hsl(172, 67%, 45%);
+    left: 180px;
+    font-size: 40px;
+    bottom: 2px;
 }
 
 #btt button{
@@ -333,6 +379,12 @@ body{
     margin: 5px;
 }
 
+#sec h3{
+    position: relative;
+    top: 17px;
+    color: hsl(184, 14%, 56%);
+}
+
 #keys input{
     border-radius: 5px;
     background-color: hsl(189, 47%, 97%);
@@ -340,6 +392,44 @@ body{
     border: none;
     width: 80px;
     height: 35px;
+}
+#bill-input input{
+    margin-left: -15px;
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(189, 47%, 97%);
+}
+
+
+#bill-input img{
+    position: relative;
+    top: 3px;
+    left: 25px;
+    width: 10px;
+}
+
+#nm img{
+    position: relative;
+    left: 20px;
+    top: 3px;
+}
+
+#nm input{
+    margin-left: -15px;
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(189, 47%, 97%);
+}
+
+#nm h4{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color:hsl(186, 14%, 43%);
 }
 
 
