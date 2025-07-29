@@ -1,40 +1,92 @@
+<!-- 2) შექმენით მსგავსი პროექტი (მხოლოდ დიზაინი) და დაუმატეთ მას responsive - ი -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
     <link rel="stylesheet" href="project1.css">
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tip Calculator</title>
+  
+</head>
+<body>
+
+<div id="fr">
+  <h4>S P L I <br> T T E R</h4>
+</div>
+
+
+
+<div id="all">
+
+
+
+
+<div id="sec">
+  <h3>Bill</h3>
+  <div id="bill-input">
+    <img src="./tip-calculator-app-main/images/icon-dollar.svg">
+    <input   id="bill" type="number" >
+  </div>
+
+  <div id="th">
+    <h3>Select tip %</h3>
+    <div id="keys">
+      <button onclick="setTip(5)">5%</button>
+      <button onclick="setTip(10)">10%</button>
+      <button onclick="setTip(15)">15%</button><br>
+      <button onclick="setTip(25)">25%</button>
+      <button onclick="setTip(50)">50%</button>
+      <input id="customTip" type="number" placeholder="Custom %" onchange="setCustomTip()" />
+    </div>
+  </div>
+
+  <div id="nm">
+
+
+    
+    <h4>Number of people</h4>
+    <img src="./tip-calculator-app-main/images/icon-person.svg">
+    <input  id="people" placeholder="                                                              0">
+ 
+
+
+  </div>
+
+  <div id="amnt">
+    <h1>Tip  Amount <span id="tipPerPerson"> $0.00</span><br>
+    <span id="prs">/ person</span></h1>
+    <h2>Total  <br><span id="prs2">/ person:</span> <span id="totalPerPerson">$0.00</span></h2>
+  </div>
+
+  <div id="btt">
+    <button onclick="resetAll()"><h1>RESET</h1></button>
+  </div>
+
+  </div>
+</div>
+
+    
     
 
-    <div id="calculator">
-        <input id="display" readonly>
-        <div id="keys">
-            <button onclick ="append('+')">+</button>
-            <button onclick="append('-')">-</button>
-            <button onclick="append('0')">0</button>
-            <button onclick="append('1')">1</button>
-            <button onclick="append('2')">2</button>
-            <button onclick="append('3')">3</button>
-            <button onclick="append('4')">4</button>
-            <button onclick="append('5')">5</button>
-            <button onclick="append('6')">6</button>
-            <button onclick="append('7')">7</button>
-            <button onclick="append('8')">8</button>
-            <button onclick="append('9')">9</button>
-            <button onclick="append('10')">10</button>
-            <button onclick="append('*')">*</button>
-            <button onclick="append('/')">/</button>
-            <button onclick="clearDis()">C</button>
-            <button onclick="calc()">=</button>
-            <button onclick="append('.')">.</button>
-        </div>
-    </div>
 
-
-
+    
     <script src="project1.js"></script>
 </body>
 </html>

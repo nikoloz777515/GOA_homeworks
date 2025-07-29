@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 
@@ -260,7 +260,7 @@
 
 
 
-    } */
+    }
 
 
 
@@ -269,20 +269,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 body{
-    font-family:Space Mono
-;
+    font-family:Space Mono;
     background-color: hsl(185, 41%, 84%);;
+     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
      
+}
+
+#fr h4{
+    position: relative;
+    bottom: 260px;
+    left: 360px;
+    color:  hsl(186, 14%, 43%); 
 }
 
 #keys button{
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
+    
+}
+
+#keys button:hover{
+    background-color: hsl(172, 67%, 45%);
+   
 }
 
 #th #keys input{
-    background-color: ;
+    color: hsl(186, 14%, 43%);
+    font-size: 18px;
+    font-weight: 600;
 }
 
     
@@ -294,16 +312,19 @@ body{
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
+    align-items: center;
+
 }
 
 #amnt {
     position: relative;
-    bottom: 335px;
+    bottom: 350px;
     left: 350px;
     background-color: hsl(183, 100%, 15%);
     display: inline-block;
     padding: 60px;
     border-radius: 10px;
+    border: none;
     width: 220px;
     height: 240px; 
 }
@@ -351,15 +372,20 @@ body{
 }
 
 #btt button{
-    background-color: hsl(172, 67%, 45%);
+    background-color: hsl(186, 14%, 43%);
     position: relative;
     border-radius: 5px;
-    
+    font-size: 14px;
+    color:hsl(183, 100%, 15%);
     left: 430px;
     bottom: 400px;
     width: 200px;
     height: 40px;
     
+}
+
+#btt button:hover{
+    background-color:  hsl(172, 67%, 45%);
 }
 
 #btt button h1{
@@ -388,10 +414,14 @@ body{
 #keys input{
     border-radius: 5px;
     background-color: hsl(189, 47%, 97%);
-    color: red;
+   
     border: none;
     width: 80px;
     height: 35px;
+}
+
+#keys input:hover{
+     border: solid hsl(172, 67%, 45%);
 }
 #bill-input input{
     margin-left: -15px;
@@ -410,6 +440,10 @@ body{
     width: 10px;
 }
 
+#bill-input :hover{
+     border: solid hsl(172, 67%, 45%);
+}
+
 #nm img{
     position: relative;
     left: 20px;
@@ -420,9 +454,16 @@ body{
     margin-left: -15px;
     width: 250px;
     height: 30px;
+    font-weight:750;
+    font-size: 22px;
     border-radius: 6px;
     border: none;
     background-color: hsl(189, 47%, 97%);
+    
+}
+
+#nm input:hover{
+     border: solid hsl(172, 67%, 45%);
 }
 
 #nm h4{

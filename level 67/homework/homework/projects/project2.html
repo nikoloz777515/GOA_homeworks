@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="project2.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="project2.css" />
 </head>
 <body>
-<div id="dv1">
+  <div id="dv1">
+    <div class="input">
+      <label for="txt1">DAY</label>
+      <input type="text" id="txt1" placeholder="DD" />
+    </div>
 
-  <div class="input">
-    <label for="txt1">DD</label>
-    <input type="text" id="txt1" placeholder="DD">
+    <div class="input">
+      <label for="txt2">MONTH</label>
+      <input type="text" id="txt2" placeholder="MM" />
+    </div>
+
+    <div class="input">
+      <label for="txt3">YEAR</label>
+      <input type="text" id="txt3" placeholder="YYYY" />
+    </div>
+
+    <hr />
+
+    <img src="./age-calculator-app-main/assets/images/icon-arrow.svg" 
+         id="calcBtn" 
+         onclick="calculateAge()" 
+         style="cursor: pointer; width: 40px; margin-top: 10px;" />
+
+    <div id="ymd">
+      <h1>Years</h1>
+      <h1>Month</h1>
+      <h1>Day</h1>
+    </div>
+
+    <div id="resul">
+      <h2 id="resYear">--</h2>
+      <h2 id="resMonth">--</h2>
+      <h2 id="resDay">--</h2>
+    </div>
   </div>
 
-  <div class="input">
-    <label for="txt2">MM</label>
-    <input type="text" id="txt2" placeholder="MM">
-  </div>
-
-  <div class="input">
-    <label for="txt3">YYYY</label>
-    <input type="text" id="txt3" placeholder="YYYY">
-  </div>
-
-</div>
-    
+    <script src="project2.js"></script>
 </body>
 </html>

@@ -1,51 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 body{
-    margin: 0px;
+    font-family:Space Mono;
+    background-color: hsl(185, 41%, 84%);;
+     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+     
 }
 
-
-#calculator{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(0, 0%, 10%);
-    border-radius: 15px;
-    max-width: 500px;
-    overflow: hidden;
+#fr h4{
+    position: relative;
+    bottom: 260px;
+    left: 360px;
+    color:  hsl(186, 14%, 43%); 
 }
 
-#display{
-    width: 100%;
-    padding: 20px;
-    font-size: 6rem;
-    text-align: left;
+#keys button{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+#keys button:hover{
+    background-color: hsl(172, 67%, 45%);
+   
+}
+
+#th #keys input{
+    color: hsl(186, 14%, 43%);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+    
+#all{
+    border: 3px solid white;
+    background-color: white;
+    width: 700px;
+    height: 360px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+#amnt {
+    position: relative;
+    bottom: 350px;
+    left: 350px;
+    background-color: hsl(183, 100%, 15%);
+    display: inline-block;
+    padding: 60px;
+    border-radius: 10px;
     border: none;
-    background-color: hsl(0, 0%, 10%);
-    color: white;
+    width: 220px;
+    height: 240px; 
 }
 
-#keys{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px
-    ;
-    padding: 25px;
+#amnt h1{
+    color:  hsl(0, 100%, 100%);
+    position: relative;
+    right: 40px;
+    bottom: 40px;
+    font-size: 18px;
 }
 
-button{
-    width: 100px;
-    height: 100px;
-    border-radius: 55px;
-    border: none;
-    background-color: hsla(0, 0%, 0%, 30%);
-    color: white;
-    font-size: 4rex;
-    font-weight: bold;
+#amnt #tipPerPerson{
+    position: absolute;
+    color: hsl(172, 67%, 45%);
+    left: 180px;
+    font-size: 40px;
+    top: -20px;
+}
+
+#amnt #prs{
+    position: relative;
+    left: 10px;
+    color:hsl(184, 14%, 56%);
+}
+
+#amnt h2{
+    font-size: 18px;
+    position: relative;
+    right: 35px;
+    bottom: 10px;
+    color: hsl(0, 100%, 100%);
+}
+
+#amnt #prs2{
+    color: hsl(184, 14%, 56%);
+}
+
+#amnt #totalPerPerson{
+    position: absolute;
+    color: hsl(172, 67%, 45%);
+    left: 180px;
+    font-size: 40px;
+    bottom: 2px;
+}
+
+#btt button{
+    background-color: hsl(186, 14%, 43%);
+    position: relative;
+    border-radius: 5px;
+    font-size: 14px;
+    color:hsl(183, 100%, 15%);
+    left: 430px;
+    bottom: 400px;
+    width: 200px;
+    height: 40px;
+    
+}
+
+#btt button:hover{
+    background-color:  hsl(172, 67%, 45%);
+}
+
+#btt button h1{
+   
+    position: relative;
+    bottom: 14px;
     cursor: pointer;
 }
 
-button:hover{
-    background-color: hsl(35, 100%, 55%);
+#keys button{
+    background-color:hsl(183, 100%, 15%);
+    color: white;
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
 }
 
+#sec h3{
+    position: relative;
+    top: 17px;
+    color: hsl(184, 14%, 56%);
+}
+
+#keys input{
+    border-radius: 5px;
+    background-color: hsl(189, 47%, 97%);
+   
+    border: none;
+    width: 80px;
+    height: 35px;
+}
+
+#keys input:hover{
+     border: solid hsl(172, 67%, 45%);
+}
+#bill-input input{
+    margin-left: -15px;
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(189, 47%, 97%);
+}
+
+
+#bill-input img{
+    position: relative;
+    top: 3px;
+    left: 25px;
+    width: 10px;
+}
+
+#bill-input :hover{
+     border: solid hsl(172, 67%, 45%);
+}
+
+#nm img{
+    position: relative;
+    left: 20px;
+    top: 3px;
+}
+
+#nm input{
+    margin-left: -15px;
+    width: 250px;
+    height: 30px;
+    font-weight:750;
+    font-size: 22px;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(189, 47%, 97%);
+    
+}
+
+#nm input:hover{
+     border: solid hsl(172, 67%, 45%);
+}
+
+#nm h4{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color:hsl(186, 14%, 43%);
+}
