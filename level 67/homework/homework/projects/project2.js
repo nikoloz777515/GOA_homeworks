@@ -4,7 +4,7 @@ function calculateAge() {
       const year = parseInt(document.getElementById('txt3').value);
 
       if (!day || !month || !year) {
-        alert('გთხოვთ შეიყვანოთ სრული და სწორი დაბადების თარიღი');
+        alert('please enter full birth date');
         return;
       }
 
@@ -12,7 +12,7 @@ function calculateAge() {
       const today = new Date();
 
       if (birthDate > today) {
-        alert('დაბადების თარიღი ვერ იქნება მომავალი თარიღი!');
+        alert('wrong date your date will note be next year');
         return;
       }
 
@@ -31,7 +31,7 @@ function calculateAge() {
         months += 12;
       }
 
-      // გამოიტანე შედეგი ცალ-ცალკე ელემენტებში
+      
       document.getElementById('resYear').textContent = years;
       document.getElementById('resMonth').textContent = months;
       document.getElementById('resDay').textContent = days;

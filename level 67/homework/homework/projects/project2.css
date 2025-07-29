@@ -3,6 +3,10 @@
 body{
   background-color: hsl(0, 0%, 94%);
   font-family: Poppins;
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -10,21 +14,26 @@ body{
   border: 2px solid red;
   background-color: hsl(0, 100%, 100%);
   border-radius: 8px;
-  border-bottom-right-radius: 100px;
+  border-bottom-right-radius: 150px;
   border: none;
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 400px;
   display: flex;
   gap: 20px;
 }
 
 .input {
+ position: relative;
+ top: 10px;
+ left: 50px;
   display: flex;
   flex-direction: column;
 }
 
 #dv1 input{
   border-radius: 8px;
+  width: 90px;
+  height: 50px;
   border:solid hsl(0, 1%, 44%);
 }
 
@@ -57,28 +66,44 @@ label{
   background-color: hsl(259, 100%, 65%);
 }
 
-.input hr{
+ hr{
   position: absolute;
-  top: 120px;
-  left: 10px;
-  width: 310px;
+  top: 250px;
+  left: 35px;
+  width: 820px;
+  height: 2px;
+ border: none;
+  background-color: hsl(0, 1%, 94%);
+  
 }
 
 #ymd h1{
   position: relative;
   color:  hsl(0, 0%, 0%);
-  right: 5em;
+  right: 3em;
+  
   top: 120px;
-  font-size: 38px;
+  font-size: 80px;
+  
   font-weight: bold;
-  line-height: 0.9;
+  line-height: 0.3;
 }
 
 #resul h2{
   position: relative;
-  top: 118px;
-  right: 400px;
-  font-size: 27px;
+  top: 130px;
+  right: 635px;
+  line-height: 0.5;
+  font-size: 57px;
   font-weight: 900;
   color: hsl(259, 100%, 65%);
+}
+
+#mg img{
+  width: 70px;
+  position: relative;
+  top: 87px;
+  left: 123px;
+   border-radius: 60px;
+  background-color: hsl(259, 100%, 65%);
 }
