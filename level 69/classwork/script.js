@@ -2,7 +2,7 @@
 
 
 let account = {
-  _email: 'amail@gmail.com',
+  _email: 'emeail@gmail.com',
   _pass: 'paroli123',
   fullname: 'Nikoloz Kvelashvili',
 

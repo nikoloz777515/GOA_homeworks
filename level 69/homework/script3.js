@@ -6,5 +6,16 @@ const car = {
     Year:2021,
     Millage: "20000ml"
 }
-const name =  {brand,Millage} 
-console.log(name)
+const {brand,Millage} = car 
+console.log(brand)
+console.log(Millage)
+
+
+
+let mil = Millage
+let brnd = brand
+
+console.log(mil)
+console.log(brnd)
+
+// დესტრუქცია არის ობიექტებიდან ან მასივიდან კუთვნილებების ამოღბა და კი შეგვიძლია დესტრუქციის დროს შევუცვალოთ კუთვნილებებს სახელები
