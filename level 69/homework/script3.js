@@ -6,5 +6,5 @@ const car = {
     Year:2021,
     Millage: "20000ml"
 }
-const  {brand,Millage} = cr
-console.log(cr)
+const name =  {brand,Millage} 
+console.log(name)
