@@ -2,10 +2,12 @@
 
 let input = prompt('please enter a string')
 
-const normalized = input.toLowerCase().replace(/[^a-z0-9]/g, "")
+// const normalized = input.toLowerCase().replace(/[^a-z0-9]/g, "")
 
-const reversed = normalized.split("").reverse().join("")
-if(normalized === reversed){
+const reversed = input.split("").reverse().join("")
+
+
+if(input === reversed){
     console.log(`'this your string ${input}  is palindrome' `)
 }
 else{

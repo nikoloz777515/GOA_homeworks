@@ -5,31 +5,38 @@ let users = [
         name: 'nika', age: 18
     },
     {
-        name: 'nika', age: 40
+        name: 'nika', age: 22
     },
     {
-        name: 'nika', age: 48
+        name: 'nika', age: 33
     },
     {
-        name: 'nika', age: 25
+        name: 'nika', age: 44
     }, {
-        name: 'nika', age: 21
+        name: 'nika', age: 56
     },
     {
-        name: 'nika', age: 50
+        name: 'nika', age: 62
     },
     {
-         name: 'nika', age: 44
+         name: 'nika', age: 77
     }
 ]
 
-let usersAge1 = users.reduce()
-console.log(usersAge1)
+let result = {
 
-let usersAge2 = users.reduce()
+}
+for(let i = 0; i < users.length; i++){
+    let user = users[i]
+    let age = user.age
+    let start = Math.floor(age / 10) * 10;
+    let end = start + 9 
+    let range = start + '-' + end;
+    if(!result[range]){
+        result[range] = []
+    }
+    result[range].push(user)
+    
+}
 
-
-let usersAge3 = users.reduce()
-
-
-let usersAge4 = users.reduce()
+console.log(result)

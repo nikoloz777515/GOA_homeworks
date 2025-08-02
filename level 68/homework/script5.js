@@ -3,7 +3,7 @@
 
 const numbers = [2,3,4,7,6,11,13,90,99,21,99]
 
-let Evencount = numbers.filter(num =>num % 2 === 0).length
+let Evencount = numbers.filter(num => num % 2 === 0).length
 
 let Oddcount = numbers.filter(num =>num % 2 !== 0).length
     

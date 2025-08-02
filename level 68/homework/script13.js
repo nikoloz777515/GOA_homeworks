@@ -3,7 +3,7 @@
 const numbers = [2,3,4,5,2,6,5,8,7,6,5,7,]
 
 let numberFilter = numbers.filter((num,index,arr) => {
-    return arr.indexOf(num) === arr.lastIndexOf(num)
+    return arr.indexOf(num) === index 
 })
 
 
