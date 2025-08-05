@@ -1,0 +1,59 @@
+body{
+    background-color: wheat;
+      height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    background-color: rgb(56, 145, 131);
+    text-align: center;
+    border: 4px solid red;
+    height: 500px;
+    width: 300px;
+}
+
+div ul{
+    position: relative;
+    margin-left: 200px;
+    right: 120px;
+    font-weight:50 ;
+    color: black;
+    
+}
+
+ div h1{
+    color: rgb(40, 18, 166);
+    font-weight: 900;
+    font-size: 40px;
+    font-style: oblique;
+ }
+
+ #btn1{
+    margin: 17px;
+    width: 100px;
+    color: rgb(40, 18, 166);
+    font-weight: 700;
+    font-size: 17px;
+ }
+ #btn1:hover{
+    border: none;
+    transition: 1s;
+    background-color: red;
+ }
+
+
+  #btn2{
+    margin: 17px;
+    width: 100px;
+    height: 25px;
+    color: green;
+    font-weight: 700;
+    font-size: 13px;
+ }
+ #btn2:hover{
+    border: none;
+    transition: 1s;
+    background-color: black;
+ }

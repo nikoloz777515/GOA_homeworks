@@ -8,18 +8,19 @@ function Book (title, author, year, genre){
     this.year = year;
     this.genre = genre;
 
-if(typeof this.year === 'number' && this.title.length >= 3){
+
+    this.Warnings = function (){
+   if(typeof this.year === 'number' && this.title.length >= 3){
         console.log(`The book name is ${title} its author is ${author} and the book was released in ${year}`)
 }else{
     console.log('eror')
-    
-    
-    
-}
+     }
 
+    }
 
 }
 
-const bok1 = new Book('grf','niko',2078,'roman');
+const bok1 = new Book('IT safudzvlebi','niko.k',2078,'roman');
 
-console.log(bok1);
+bok1.Warnings();
+console.log(bok1)
