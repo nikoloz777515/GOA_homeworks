@@ -1,15 +1,26 @@
-function todo (){
-  const input = prompt("enter a task")
- 
 
-    let output = document.getElementById("ul")
+const clearButton = document.getElementById("btn2");
+const taskList = document.getElementById("ul");
 
-    output.innerHTML += `<li>task: ${input}</li>`
+clearButton.addEventListener("click", function () {
+  const lastTask = taskList.lastElementChild;
+
+  if (lastTask) {
+    lastTask.remove();
+  } else {
+    alert("list is empty");
+  }
+});
 
 
-  
-  
+function todo() {
+  const input = prompt("Enter a task");
+
+  if (input.trim() !== "") {
+    taskList.innerHTML += `<li>task: ${input}</li>`;
+  }
 }
+
 
 
 
