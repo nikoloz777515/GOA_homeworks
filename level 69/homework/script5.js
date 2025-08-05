@@ -1,9 +1,17 @@
-
+const task = document.getElementById("ul");
 const clearButton = document.getElementById("btn2");
-const taskList = document.getElementById("ul");
+
+
+function todo() {
+  const input = prompt("Enter a task");
+    task.innerHTML += `<li>task: ${input}</li>`;
+  
+}
+
+
 
 clearButton.addEventListener("click", function () {
-  const lastTask = taskList.lastElementChild;
+  const lastTask = task.lastElementChild;
 
   if (lastTask) {
     lastTask.remove();
@@ -11,16 +19,4 @@ clearButton.addEventListener("click", function () {
     alert("list is empty");
   }
 });
-
-
-function todo() {
-  const input = prompt("Enter a task");
-
-  if (input.trim() !== "") {
-    taskList.innerHTML += `<li>task: ${input}</li>`;
-  }
-}
-
-
-
 
