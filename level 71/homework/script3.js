@@ -12,6 +12,6 @@ console.log(data)
 
  localStorage.setItem("user", JSON.stringify(data));
 
-    alert("მონაცემები წარმატებით შეინახა!");
+    alert("მონაცემები წარმატებით შეინახა")
  
 })
