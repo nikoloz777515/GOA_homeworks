@@ -1,0 +1,27 @@
+<!-- 1) შექმენით პროექტი, სადაც გექნებათ ერთი სექცია Add Car, იქნება ფორმა სადაც, მომხმარებელი შეიყვანს მანქანის მონაცემებს როგორიცაა make, model, year. თქვენი დავალებაა რომ მომხმარებლის მიერ ჩაწერილი ინფორმაცია input - ებიდან წამოიღოთ და დაამატოთ cars მასივში (cars მასივი თავიდან უნდა იყოს ცარიელი) ეს მასივი უნდა დაემატოს localStorage - ში (ლოკალურ ბაზაში), ინფორმაციის დადასტურების შემდეგ უნდა შეიქმნას ერთი ცხრილი სადაც ჩაამტებთ მანქანის შესახებ მონაცემებს თითოეულ მანქანას უნდა მიენიჭოს უნიკალური ID, უნდა გქონდეთ delete Car ღილაკი რომელზე დაჭერისას ცხრილიდან და ლოკალური ბაზიდან უნდა წაიშალოს მანქანა, ეს გააკეთეთ class - ების გამოყენებით + დაუმატეთ გასტილვა -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+ </head>
+ <body>
+    <form>
+        <h1>ADD CAR</h1>
+        <label for="make"> make</label><br>
+        <input type="text" name="make"> <br>
+        <label for="model">model</label><br>
+        <input type="text" name="model"><br>
+        <label for="year">year</label><br>
+        <input type="text" name="year"><br>
+        <button>submit</button>
+    </form>
+
+    
+    
+
+    <script src="project.js"></script>
+ </body>
+ </html>
