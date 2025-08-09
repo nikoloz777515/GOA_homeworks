@@ -22,6 +22,7 @@ static deleteCar (id){
     cars = cars.filter(car => car.id !== id)
     this.saveToLocalStorage();
     this.renderTable();
+    
    }
 static saveToLocalStorage(){
     localStorage.setItem("cars", JSON.stringify(cars))
@@ -72,9 +73,9 @@ document.querySelectorAll(".delete-btn").forEach(btn => {
 form. addEventListener("submit",(e) =>{
     e.preventDefault()
 
-    let make = form.make.value.trim();
-    let model = form.model.value.trim();
-    let year = form.year.value.trim();
+    let make = form.make.value;
+    let model = form.model.value;
+    let year = form.year.value;
 
     if(!make || !model || !year){
         alert("please fill all field")
