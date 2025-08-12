@@ -1,0 +1,98 @@
+body{
+    background-color: hsl(227, 75%, 14%);
+}
+
+#ext button{
+   margin-left: 120px;
+   margin-top: 20px;
+    width: 1100px;
+    height: 70px;
+    background-color:hsl(225, 23%, 24%);
+    border-radius: 8px;
+    border: none;
+    position: relative;
+}
+
+#ext img{
+    position: relative;
+    top: 13px;
+    right: 430px;
+}
+
+#ext h1{
+    position: relative;
+    color: hsl(0, 0%, 93%);
+    right: 400px;
+    bottom: 43px;
+}
+
+#ext #bt2{
+    position: relative;
+    left: 1030px;
+    width: 60px;
+    height: 50px;
+    bottom: 100px;
+    border-radius: 12px;
+    border: none;
+    background-color:  hsl(227, 75%, 14%);
+}
+
+#ext #bt2 img{
+    position: relative;
+    left: 6px;
+    width: 30px;
+    bottom: 949px;
+}
+
+#dv h1{
+    position: relative;
+    left: 130px;
+    bottom: 50px;
+    color:hsl(0, 0%, 93%);
+}
+
+#buttons button{
+    position: relative;
+    left: 1050px;
+    bottom: 90px;
+    border-radius: 24px;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    right: 140px;
+    bottom: 70px;
+}
+
+.ext-card{
+    background-color: hsl(226, 25%, 17%);
+    height: 200px;
+    width: 400px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+#grid #mg1{
+    position: relative;
+    top: 15px;
+    left: -155px;
+}
+
+#txt1 h2{
+    position: relative;
+    bottom: 60px;
+   right: 20px;
+   font-size: 36px;
+}

@@ -42,7 +42,7 @@ autBtn.addEventListener("click", (e) =>{
     }
 
     const Newuser ={
-       email,name,password
+       email,password
     }
     users.push(Newuser)
 
