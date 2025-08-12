@@ -1,0 +1,58 @@
+body{
+    background-color: wheat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec1{
+    border: 4px solid red;
+    border-radius: 12px;
+    text-shadow: 4px 3px 2px red;
+    width: 350px;
+    text-align: center;
+    
+
+}
+
+#sec1 input{
+    border-radius: 4px;
+    border: none;
+    margin: 5px;
+}
+
+#sec1 #autBtn{
+    margin-bottom: 12px;
+    width: 115px;
+    
+    border-radius: 5px;
+}
+
+#sec2{
+    border: 4px solid red;
+    border-radius: 10px;
+    text-shadow: 4px 3px 2px red;
+    width: 350px;
+    text-align: center;
+    margin-left: 80px;
+    
+}
+
+#sec2 input{
+    border: none;
+    border-radius: 5px;
+}
+
+#sec2 #regBtn{
+    margin-bottom: 12px;
+    width: 90px;
+    border-radius: 6px;
+}
+
+#sec3{
+    position: relative;
+    right: 470px;
+    margin-top: 430px;
+}
+

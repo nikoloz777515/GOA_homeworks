@@ -6,10 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style7.css">
  </head>
  <body>
 
-        <section>
+        <section id="sec1">
             <h2>Authorization</h2>
             
             <label for="autEmail">email</label><br>
@@ -24,15 +26,18 @@
             <button id="autBtn">Authorize</button>
         </section>
 
-        <section>
+        <section id="sec2">
             <h2>Registration</h2>
-            <input type="email" id="regEmail" required>
-            <input type="password" id="regPass" required>
+            <label for="regEmail">email</label><br>
+            <input type="email" id="regEmail" placeholder="email"><br><br>
+
+            <label for="regPass">password</label><br>
+            <input type="password" id="regPass" placeholder="password"><br><br>
             <button id="regBtn">Register</button>
         </section>
 
-        <section>
-            <h2>Registered Users</h2>
+        <section id="sec3">
+            <h2>Registered Users:</h2>
             <ul id="usersList"></ul>
         </section>
 

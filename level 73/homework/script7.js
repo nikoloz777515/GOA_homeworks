@@ -47,7 +47,7 @@ autBtn.addEventListener("click", (e) =>{
     users.push(Newuser)
 
     
-      usersList.innerHTML = users.map(user => `<li>${user.name}  ${user.email}</li>`).join("");
+      usersList.innerHTML = users.map(user => `<li>${user.email} <br> ${user.password}</li>`);
 
     
 
