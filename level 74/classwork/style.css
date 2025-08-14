@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
+    font-family: Noto Sans;
     background-color: hsl(227, 75%, 14%);
+    
 }
 
 #ext button{
@@ -86,13 +90,163 @@ body{
 
 #grid #mg1{
     position: relative;
+    right: 150px;
     top: 15px;
-    left: -155px;
 }
 
 #txt1 h2{
     position: relative;
     bottom: 60px;
-   right: 20px;
-   font-size: 36px;
+    right: 20px;
+    font-size: 16px;
+}
+/* #txt1 p{
+    color: red;
+} */
+
+#grid #mg2{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt2 h2{
+    position: relative;
+    bottom: 60px;
+    right: 20px;
+    font-size: 16px;
+}
+
+#grid #mg3{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt3 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+
+#grid #mg4{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+#txt4 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+
+#grid #mg5{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt5 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+#grid #mg6{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt6 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+#grid #mg7{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt7 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+#grid #mg8{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt8 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+#grid #mg9{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt9 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+#grid #mg10{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt10 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+#grid #mg11{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt11 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+
+#grid #mg12{
+    position: relative;
+    right: 150px;
+    top: 15px;
+}
+
+#txt12 h2{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    font-size: 16px;
+}
+p{
+    font-weight: 500;
+    color: hsl(0, 0%, 78%);
+    position: relative;
+    bottom: 70px;
+    left: 35px;
+}
+h2{
+    font-weight: 700;
+    font-size: 28px;
 }
