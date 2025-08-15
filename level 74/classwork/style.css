@@ -6,6 +6,9 @@ body{
     
 }
 
+
+
+
 #ext button{
    margin-left: 120px;
    margin-top: 20px;
@@ -32,7 +35,7 @@ body{
 
 #ext #bt2{
     position: relative;
-    left: 1030px;
+    left: 1050px;
     width: 60px;
     height: 50px;
     bottom: 100px;
@@ -100,9 +103,18 @@ body{
     right: 20px;
     font-size: 16px;
 }
-/* #txt1 p{
-    color: red;
-} */
+#txt1 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 100px;
+}
 
 #grid #mg2{
     position: relative;
@@ -115,6 +127,18 @@ body{
     bottom: 60px;
     right: 20px;
     font-size: 16px;
+}
+#txt2 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 100px;
 }
 
 #grid #mg3{
@@ -129,6 +153,18 @@ body{
     right: 20px;
     font-size: 16px;
 }
+#txt3 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 100px;
+}
 
 #grid #mg4{
     position: relative;
@@ -141,7 +177,18 @@ body{
     right: 20px;
     font-size: 16px;
 }
-
+#txt4 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 135px;
+}
 #grid #mg5{
     position: relative;
     right: 150px;
@@ -153,6 +200,18 @@ body{
     bottom: 70px;
     right: 20px;
     font-size: 16px;
+}
+#txt5 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+   right: 100px;
 }
 #grid #mg6{
     position: relative;
@@ -166,6 +225,18 @@ body{
     right: 20px;
     font-size: 16px;
 }
+#txt6 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 100px;
+}
 #grid #mg7{
     position: relative;
     right: 150px;
@@ -177,6 +248,18 @@ body{
     bottom: 70px;
     right: 20px;
     font-size: 16px;
+}
+#txt7 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 50px;
+    right: 100px;
 }
 #grid #mg8{
     position: relative;
@@ -190,6 +273,18 @@ body{
     right: 20px;
     font-size: 16px;
 }
+#txt8 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 100px;
+}
 #grid #mg9{
     position: relative;
     right: 150px;
@@ -201,6 +296,18 @@ body{
     bottom: 70px;
     right: 20px;
     font-size: 16px;
+}
+#txt9 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 100px;
 }
 #grid #mg10{
     position: relative;
@@ -214,6 +321,18 @@ body{
     right: 20px;
     font-size: 16px;
 }
+#txt10 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 100px;
+}
 #grid #mg11{
     position: relative;
     right: 150px;
@@ -225,6 +344,18 @@ body{
     bottom: 70px;
     right: 20px;
     font-size: 16px;
+}
+#txt11 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 100px;
 }
 
 #grid #mg12{
@@ -239,6 +370,18 @@ body{
     right: 20px;
     font-size: 16px;
 }
+#txt12 button{
+    background-color:hsl(226, 25%,17%);
+    width: 100px;
+    height: 40px;
+    border-radius: 29px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(0, 0%, 78%);
+    bottom: 30px;
+    right: 100px;
+}
 p{
     font-weight: 500;
     color: hsl(0, 0%, 78%);
@@ -249,4 +392,53 @@ p{
 h2{
     font-weight: 700;
     font-size: 28px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+}
+
+ .switch  input{
+    display: none;
+} 
+.slider{
+    position:absolute;
+    cursor: pointer;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #e74c3c; 
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+.slider:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 21px;
+    left: 3px;
+    bottom: 0px;
+    background-color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+
+}
+
+input:checked + .slider{
+    background-color: #27ae60;
+}
+
+input:checked + .slider:before{
+    transform: translateX(50px);
+}
+.switch{
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    left: 95px;
 }
