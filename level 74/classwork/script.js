@@ -6,7 +6,7 @@ rmv.forEach(bt =>{
     })
 })
 
-const toggles = document.querySelectorAll(".switch input[type='checkbox']");
+
 
 
 

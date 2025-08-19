@@ -10,7 +10,7 @@ body{
 
 
 #ext button{
-   margin-left: 120px;
+   margin-left: 370px;
    margin-top: 20px;
     width: 1100px;
     height: 70px;
@@ -35,7 +35,7 @@ body{
 
 #ext #bt2{
     position: relative;
-    left: 1050px;
+    left: 1000px;
     width: 60px;
     height: 50px;
     bottom: 100px;
@@ -46,21 +46,21 @@ body{
 
 #ext #bt2 img{
     position: relative;
-    left: 6px;
+   right: 1px;
     width: 30px;
-    bottom: 949px;
+    margin-bottom: 50px;
 }
 
 #dv h1{
     position: relative;
-    left: 130px;
+    left: 350px;
     bottom: 50px;
     color:hsl(0, 0%, 93%);
 }
 
 #buttons button{
     position: relative;
-    left: 1050px;
+    left: 1350px;
     bottom: 90px;
     border-radius: 24px;
     border: none;
