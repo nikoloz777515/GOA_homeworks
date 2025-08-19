@@ -13,11 +13,13 @@ const createProductLI = (products) =>{
         for(const product of products){
             result +=
          `
-        <li>${product.title}</li>
+            <h3>Title: ${product.title}</h3>
 
-        <li>${product.description}</li>
+            <p>Description: ${product.description}</p>
 
-        <li>${product.img}</li>
+            <h2> Price: ${product.price}$</h2>
+
+            <img src = ${product.image} />
         ` 
         }
         return result;

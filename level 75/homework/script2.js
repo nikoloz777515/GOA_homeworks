@@ -1,28 +1,27 @@
-// 3) გააკეთეთ promise - ებზე 2 მაგლითი, ასევე ახსენით კოდი კომენტარების სახით
-
-
-let promi = new Promise((resolve,reject) =>{
-    if(5 > 4){
-        resolve("5 is grather than 4")
-    }else{
-        reject("eror")
-    }
-})
-
-promi.then(th => console.log(th))
-.catch(cth => console.log(cth))
+// 2) fetch - ის დახმარებით გააგზავნეთ მოთხოვნა https://fakestoreapi.com/products ამ ლინკზე, წამოიღეთ პროდუქტები და დაა - render - ეთ (გამოიტანეთ) საიტზე, გამოიტანეთ პროდუქტების ფასი, description, სურათი, rating, category, title, დაულაგებელი სიის სახით 
 
 
 
-let prom = new Promise((resolve,reject) =>{
-    let myStr = "Hello"
+let ul  =  document.getElementById("uld")
 
-        if(myStr.length > 4){
-            resolve("your array has more length than 4!")
-        }else{
-            reject("your array has less length than 4!!")
-        }
-})
+fetch("https://fakestoreapi.com/products")
+    .then(res => res.json(res))
+    .then(products => render(products))
+    .catch(cth => console.log(cth))
+    
 
-prom.then(lng => console.log(lng))
-.catch(ct => console.log(ct))
+const render = (prd) =>{
+        ul.innerHTML = prd.map(product => `
+    <li>
+        <p>${product.title}</p>
+
+        <img src = ${product.image} />
+
+        <p>${product.rating}</p>
+
+        <p>${product.price}</p>
+
+         <p>${product.category}</p>
+    </li>
+        `)
+}
