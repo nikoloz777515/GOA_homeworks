@@ -4,6 +4,10 @@
 body{
     background-color:   hsl(235, 18%, 26%);
     font-family:Roboto;
+     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dv1{
