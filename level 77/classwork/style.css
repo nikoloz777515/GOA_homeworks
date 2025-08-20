@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color:   hsl(235, 18%, 26%);
+    font-family:Roboto;
+}
+
+.dv1{
+    border: 2px solid red;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    width: 850px;
+    height:600px;
+    border-radius: 16px;
+}
+
+.dv1 h1{
+    position: relative;
+    left: 40px;
+    top: 50px;
+    font-weight: 900;
+    font-size: 46px;
+}
+
+.dv1 #p1{
+    position: relative;
+    top: 70px;
+    left:40px ;
+    font-weight: 500;
+}
+
+.dv1 .imgs img{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    left: 40px;
+    margin: 10px;
+    width: 30px;
+}
+
+.dv1 #p2{
+    position: relative;
+    left: 90px;
+    bottom: 20px;
+    font-weight: 600;
+}
+
+.dv1 #p3{
+    position: relative;
+    left: 90px;
+    bottom: 20px;
+    font-weight: 600;
+}
+
+.dv1 #p4{
+    position: relative;
+    left: 90px;
+    bottom: 13px;
+    font-weight: 600;
+}
+
+.dv1 #frm1{
+    position: relative;
+    left: 40px;
+}
+
+.dv1 #frm1 input{
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+}
+
+.dv1 #frm1 button{
+    position: relative;
+    top: 20px;
+    background-color:  hsl(234, 29%, 20%);
+    color: white;
+    border-radius: 6px;
+     width: 300px;
+    height: 45px;
+}
+
+.dv1 #dv3 img{
+    position: relative;
+    height: 520px;
+    left: 460px;
+    bottom: 450px;
+}
