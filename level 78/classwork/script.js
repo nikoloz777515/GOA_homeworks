@@ -15,7 +15,8 @@ const g = async () => {
 
         js.forEach(rndr =>{
 
-         ul.innerHTML = `<p>Description: ${rndr.title}<p> <br> <p>${rndr.body}</p>`
+         ul.innerHTML = `<p>Description: ${rndr.title}<p>
+          <br> <p>${rndr.body}</p>`
         })
         
     }catch(er){

@@ -5,9 +5,10 @@ let ul  =  document.getElementById("uld")
 let cart = document.getElementById("cart")
 
 fetch("https://fakestoreapi.com/products")
-    .then(res => res.json(res))
+      .then(res => res.json())
     .then(products => render(products))
     .catch(cth => console.log(cth))
+    
     
 
 const render = (prd) =>{
@@ -15,14 +16,19 @@ const render = (prd) =>{
     <li>
         <p>${product.title}</p>
 
-        <img src = ${product.image} />
+        <p>${product.price}<p/>
 
-        <p>${product.rating}</p>
+     <p>${product.description}</p>
 
-        <p>${product.price}</p>
 
-         <p>${product.category}</p>
+        <p>${product.category}</p>
+
+           <img src = ${product.image} />
+            <button>ADD</button>
+
+            <button>Remove</button>
+         <p><b>Rating:</b> ⭐ ${product.rating.rate} ( ${product.rating.count} reviews )</p>
+
     </li>
-        `)
-}
+        `)}
 
