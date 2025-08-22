@@ -4,6 +4,8 @@ let ul  =  document.getElementById("uld")
 
 let cart = document.getElementById("cart")
 
+let CartItem = []
+
 fetch("https://fakestoreapi.com/products")
       .then(res => res.json())
     .then(products => render(products))
@@ -24,11 +26,22 @@ const render = (prd) =>{
         <p>${product.category}</p>
 
            <img src = ${product.image} />
-            <button>ADD</button>
+            <button class = "btn"> ${product.id}ADD</button>
 
             <button>Remove</button>
          <p><b>Rating:</b> ⭐ ${product.rating.rate} ( ${product.rating.count} reviews )</p>
 
     </li>
-        `)}
+        `) 
+        let addCartButtons = document.querySelectorAll(".btn");
+addCartButtons.forEach(btn =>{
+    btn.addEventListener("click",() =>{
+   CartItem.push(id)
+    })
+})
+     }
+
+     
+
+
 
