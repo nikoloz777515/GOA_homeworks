@@ -36,7 +36,7 @@ const render = (prd) =>{
         let addCartButtons = document.querySelectorAll(".btn");
 addCartButtons.forEach(btn =>{
     btn.addEventListener("click",() =>{
-   CartItem.push(id)
+    
     })
 })
      }
