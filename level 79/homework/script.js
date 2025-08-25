@@ -16,35 +16,68 @@ const func = async () => {
 
 
 }
+
+
 function render(products) {
-    let ul = document.getElementById("ull")
 
-    ul.innerHTML = products
-        .map(
-            (el) => `
-      <li>
+    const main = document.getElementById('products')
+    main.innerHTML = ""
+   
+    products.forEach(el => {
+        const div = document.createElement('div')
+        div.innerHTML = `
         <p>${el.description}</p>
-        <p>${el.price} $</p>
-        <img src="${el.image}" width="100"/>
+        <P>${el.title}</p>
+        <p>${el.price} $ </p>
+        <img src ="${el.image}" width = 200/>
 
-        <button id = "btn1">Add to Cart </button>
+        <button class ="btn1" >Add</button>
+        `
 
-     </li>
-    `)
+        
+         let btn1 = div.querySelector(".btn1")
+    btn1.addEventListener("click", () => add(el))
+    
 
-           
-      let btn1 = document.getElementById("btn1")
-
-       btn1.addEventListener("click", () => add(products))
-
+     
+       main.appendChild(div)    
+   });
 
 }
 
 let cart = []
 
-const add = (products) =>{
-    cart.push(products)
-    console.log(cart)
+const add = (product) =>{
+
+const exist = cart.some(itm => itm.id === product.id)
+
+    if (exist) {
+        alert("This product is already in the cart you can buy 1 in one time")
+        return;
+    }
+
+    cart.push(product)
+    console.log("cart:", cart)
+
+        const locb = JSON.stringify(cart);
+
+        localStorage.setItem("myArray", locb);
+
+        const idk = localStorage.getItem("myArray");
+
+      
+
+      const cartDiv = document.getElementById("prod")
+    cartDiv.innerHTML = cart.map(itm=> `
+        <p>${itm.title} 
+        ${itm.price} $</p>
+
+        <button id = "btn2">Remove</button>
+    `)
+    let btn2 = document.querySelector("#btn2")
+   btn2.addEventListener("click", (e) =>{
+      
+   })
 }
 
 func()
