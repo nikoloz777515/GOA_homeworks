@@ -72,11 +72,11 @@ const exist = cart.some(itm => itm.id === product.id)
         <p>${itm.title} 
         ${itm.price} $</p>
 
-        <button id = "btn2">Remove</button>
+        <button class = "bt" >Remove</button>
     `)
-    let btn2 = document.querySelector("#btn2")
-   btn2.addEventListener("click", (e) =>{
-      
+    let btn2 = document.querySelector(".bt")
+   btn2.addEventListener("click", () =>{
+      btn2.closest(`${product.id}`.remove)
    })
 }
 
