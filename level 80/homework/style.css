@@ -1,0 +1,85 @@
+body{
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background: linear-gradient(135deg,  #ff4d6d, #845ec2);
+
+}
+
+
+#TCP{
+    margin-bottom: 705px;
+    position: relative;
+    left: 24px;
+    border: 5px solid red;
+    width: 400px;
+    height: 350px;
+}
+
+#TCP h1{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color:darkblue;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+#TLS{
+    border: 5px solid blue;
+    width: 400px;
+    height: 350px;
+}
+#TLS h1{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color:darkblue;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#HTTP{
+    margin-bottom: 705px;
+    position: relative;
+    right: 25px;
+    border: 5px solid green;
+    width: 400px;
+    height: 350px;
+}
+#HTTP h1{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color:darkblue;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#HTTPS{
+    
+    position: relative;
+    right: 50px;
+    border: 5px solid black;
+    width: 400px;
+    height: 350px;
+}
+#HTTPS h1{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color:darkblue;
+    font-weight: 700;
+    font-size: 3rem;
+}
