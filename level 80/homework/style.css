@@ -83,3 +83,48 @@ p{
     font-weight: 700;
     font-size: 3rem;
 }
+
+#versions{
+    margin-top: 830px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+   padding: 30px;
+    right: 775px;
+    display: inline;
+    width: 720px;
+    height: 370px;
+
+}
+#versions h1{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color:darkblue;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+#versions span{
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+}
+#first{
+    border: 2px solid red;
+}
+#sec{
+    border: 3px solid black;
+}
+#third{
+border: 3px solid green;
+}
+#forth{
+border: 3px solid gray;
+}
+#fifth{
+border: 3px solid blue;
+}
+
+/* #main{} */
