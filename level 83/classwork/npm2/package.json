@@ -1,0 +1,11 @@
+{
+  "name": "npm2",
+  "version": "1.0.0",
+  "description": "my second try on testing nmp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikoloz Kvelashvili",
+  "license": "ISC"
+}
