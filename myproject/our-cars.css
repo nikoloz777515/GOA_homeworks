@@ -74,9 +74,35 @@ nav{
     margin-top: 100px;
     width: 430px;
 }
+#l h1{
+    font-size: 24px;
+    text-align: center;
+}
 
 #l:hover{
     transform: scale(1.1);
     transition: 1s;
     
+}
+
+#s{
+    border: 2px solid black;
+    width: 430px;
+    height: 550px;
+}
+
+#s h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+#s img{
+    margin-top: 50px;
+    width: 430px;
+}
+
+
+#s:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
