@@ -2,6 +2,10 @@
 body{
     background-color: rgb(245, 245, 245);
     overflow-x: hidden;
+     background-image: url(./Screenshot\ 2025-09-09\ 133909.png);
+   background-repeat: no-repeat;       /* რომ არ გაიმეოროს */
+    background-position: center top;    /* შუაში ჰორიზონტალურად */
+    background-size: 100% auto;  
 }
 
 #hd1{
@@ -61,4 +65,5 @@ body{
 .imgs img:nth-of-type(1) {
     width: 20px;
 }
+
 
