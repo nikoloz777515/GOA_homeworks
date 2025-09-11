@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 19px;
+}
+
+
+
+#jsx{
+    border: 4px solid red;
+}
+
+#react{
+    border: 4px solid green;
+}
+
+#react-dom{
+    border: 4px solid black;
+}
+
+#func-comp{
+    border: 4px solid blue;
+}
+
+#createRoot{
+    border: 4px solid gray;
+}
+
+#render{
+    border: 4px solid skyblue;
+}
