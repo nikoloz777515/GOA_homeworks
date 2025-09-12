@@ -3,32 +3,94 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 19px;
+    background-color:hsl(180, 100%, 20%);
+    
 }
 
 
+*{
+    border-radius: 8px;
+}
 
 #jsx{
+    position: relative;
+    bottom: 270px;
     border: 4px solid red;
+    background-color: burlywood;
+    height: 300px;
+    width: 520px;
+    left: 40px;
+   
 }
+
 
 #react{
     border: 4px solid green;
+    height: 300px;
+    line-height: 1.7;
+    width: 450px;
+    font-weight: 800;
+    background-color: rgba(135, 207, 235, 0.608);
+    position: relative;
+    top: 230px;
+    right: 40px;
 }
+
 
 #react-dom{
     border: 4px solid black;
+    height: 600px;
+    width: 450px;
+    line-height: 1.4;
+    font-weight: 700;
+    background-color: crimson;
+    position: relative;
+    bottom: 200px;
 }
 
 #func-comp{
     border: 4px solid blue;
+    height: 300px;
+    width: 450px;
+    background-color: coral;
+    position: relative;
+    top: 300px;
+    right: 20px;
 }
 
 #createRoot{
     border: 4px solid gray;
+    height: 400px;
+    width: 450px;
+    background-color: darkblue;
+    position: relative;
+    bottom: 250px;
+    right: 40px;
 }
 
 #render{
     border: 4px solid skyblue;
+    height: 300px;
+    width: 450px;
+    background-color:goldenrod ;
+    position: relative;
+    right: 20px;
+    top: 270px;
+}
+
+h1{
+    text-align: center;
+}
+
+span{
+    font-weight: 900;
+    color: black;
+}
+
+p{
+    text-align: center;
+    font-size: 24px;
+    color: hsl(40, 60%, 100%);
 }
