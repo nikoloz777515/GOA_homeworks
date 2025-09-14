@@ -24,6 +24,7 @@ export default App
 //       <Nav /> {/* აქ ვიძახებთ Nav კომპონენტს */}
 //     </div>
 //   );
+// }
 
 // export default App;
 
