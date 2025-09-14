@@ -1,5 +1,5 @@
 // src/Nav.jsx
-function nav (){
+function Nav (){
     return(
         <nav>
         <ul>
@@ -13,4 +13,4 @@ function nav (){
     )
 }
 
-export default nav;
+export default Nav;
