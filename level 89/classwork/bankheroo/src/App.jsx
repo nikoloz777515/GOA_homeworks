@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
    const values = ["Nika","Luka","Dachi","Basa","Saba"]
@@ -9,9 +6,11 @@ function App() {
   return (
     <main>
       <ul>
-        values.map((value) => {
-          return <li>{value}</li>
+       {
+        values.map((name,index) =>{
+          return <li key={index}>{name}</li>
         })
+       }
       </ul>
     </main>
   )
