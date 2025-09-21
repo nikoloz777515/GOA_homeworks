@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    background-color: hsl(202, 86%, 94%);
+    font-family: Plus Jakarta Sans;
+    
+    
+}
+
+.Mortage {
+    border: 3px solid red;
+    background-color: hsl(0, 0%, 100%);
+    width: 1300px;
+    height: 650px;
+    border-radius: 18px;
+    border: none;
+}
+
+#h1 {
+    position: relative;
+    left: 30px;
+}
+
+#clear {
+    position: relative;
+    left: 450px;
+    bottom: 50px;
+    font-weight: 700;
+    color: hsl(200, 24%, 40%);
+
+}
+
+
+#inp1 {
+    position: relative;
+    left: 30px;
+    height: 40px;
+    border-radius: 8px;
+    width: 450px;
+}
+
+#inp2 {
+    position: relative;
+    left: 30px;
+    height: 50px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+
+
+#inp3 {
+    position: relative;
+    left: 260px;
+    height: 50px;
+    bottom: 175px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+label {
+    margin-left: 35px;
+    position: relative;
+    bottom: 10px;
+    color: hsl(200, 26%, 54%);
+}
+
+#btn2{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    bottom: 190px;
+    background: none;
+    left: 30px;
+}
+#btn2 h3{
+    position: relative;
+    bottom: 25px;
+    right: 60px;
+}
+
+#btn3{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    bottom: 210px;
+    left: 30px;
+    background: none;
+    
+}
+#btn3 h3{
+    position: relative;
+    bottom: 25px;
+    right: 60px;
+}
+
+.radio{
+    position: relative;
+    right: 130px;
+    top: 10px;
+}
+
+
+
+#btn1 {
+    width: 250px;
+    border-radius: 22px;
+   position: relative;
+   bottom: 200px;
+   left: 30px;
+    border: none;
+    background-color: hsl(61, 70%, 52%);
+    height: 40px;
+    cursor: pointer;
+}
+
+
+#btn1 h3 {
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+    font-weight: 700;
+}
+
+#btn1 img {
+    position: relative;
+    top: 7px;
+    right: 90px;
+}
+
+
+#dv2 {
+    position: relative;
+    left: 700px;
+    bottom: 650px;
+    border-radius: 12px;
+    border-bottom-right-radius: 24px;
+    border: none;
+    border: 1px ;
+    background-color:hsl(202, 55%, 16%);
+    width: 600px;
+    height: 650px;
+}
+#dv2 img{
+    width: 300px;
+    position: relative;
+    top: 80px;
+    left: 130px;
+}
+
+#dv2 h1{
+    position: relative;
+    top: 70px;
+    left: 150px;
+    color: white;
+}
+
+#dv2 p{
+    position: relative;
+    top: 80px;
+    left: 80px;
+    line-height: 1.7;
+    font-weight: 800;
+    color:hsl(203, 41%, 72%);
+}
+
+#spn{
+    position: relative;
+    left: 230px;
+    bottom: 175px;
+    color: hsl(200, 26%, 54%);
+}
+
+#idk{
+    position: relative;
+    bottom: 370px;
+    left: 30px;
+    color: hsl(200, 26%, 54%);
+}
+
+#val{
+    position: relative;
+    left: 32px;
+    border-radius: 6px;
+    height: 43px;
+    width: 30px;
+    bottom:80px;
+    text-align: center;
+    background-color:hsl(203, 41%, 82%);
+
+}
+
+
+#val p{
+    position: relative;
+    top: 10px;
+}
+
+#yr{
+    position: relative;
+    bottom: 88px;
+    left: 160px;
+    background-color:hsl(203, 41%, 82%);
+    width: 75px;
+    
+}
+
+#yr p{
+    height: 50px;
+   position: relative;
+   top: 15px;
+   left: 10px;
+   font-weight: 700;
+   color:  hsl(200, 26%, 54%);
+}
+
+#prc{
+     position: relative;
+    bottom: 265px;
+    left: 390px;
+    background-color:hsl(203, 41%, 82%);
+    width: 75px;
+    height: 50px;
+    
+}
+
+
+#prc p{
+    height: 50px;
+   position: relative;
+   top: 15px;
+   left: 27px;
+   font-weight: 700;
+   color:  hsl(200, 26%, 54%);
+}
+
