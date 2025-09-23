@@ -1,13 +1,15 @@
 import { useState } from 'react'
+import User from './User'
+
 
 
 function App() {
  
 
   return (
-    <>
-      
-    </>
+    <main>
+      <User name = "Niko" age = {17} email = "kvelaa"/>
+    </main>
   )
 }
 
