@@ -14,3 +14,10 @@ button.addEventListener("click", () => {
 
     console.log(formula)
 })
+
+
+
+
+
+
+// ((amount * year) * percent) + amount
