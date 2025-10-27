@@ -1,5 +1,6 @@
 import {  useState } from "react";
 
+
 function GitFind(){
     const [userName, setUsername] = useState("")
     const [user, setUser] = useState(null)
@@ -16,19 +17,19 @@ function GitFind(){
         }
     }
     return(
-        <div>
-      <h1>devFinder</h1>
+        <div className="bg-[rgb(20,28,47)] min-h-screen">
+      <h1 className="text-white text-5xl">devFinder</h1>
 
-      <input
+      <input className="w-[300px] bg-[rgb(18,29,50)]"
         type="text"
         placeholder="Enter GitHub username"
         value={userName}
         onChange={(e) => setUsername(e.target.value)}
       />
-      <button onClick={fetchUsr}>Search</button>
+      <button onClick={fetchUsr} className="bg-[rgb(16,109,217)] text-white">Search</button>
 
       {user && (
-        <div>
+        <div className="bg-[rgb(31,42,71)] ">
           <h2>{user.name}</h2>
           <p>{user.login}</p>
           <img
