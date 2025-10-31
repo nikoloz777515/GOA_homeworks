@@ -29,13 +29,6 @@ const ColorProvider =({children}) =>{
 }
 
  
-// function ColorProvider(){
-//     return(
-        
-//     )
-// }
-
-
 
 
 
