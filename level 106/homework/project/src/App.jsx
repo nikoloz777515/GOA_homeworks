@@ -1,18 +1,35 @@
-import { useState } from 'react'
-import AuthContext from './AuthContext'
+import { useContext } from "react";
+import AuthProvider, { AuthContext } from "./AuthContext";
+import Login from "./Login";
+import Signup from "./Signup";
+import Profile from "./Profile";
 
-function App() {
- 
+function AppContent() {
+  const { user } = useContext(AuthContext);
+
   return (
-    <>
-      <AuthContext />
-      
-    </>
-  )
+    <div style={{ textAlign: "center" }}>
+      {user ? (
+        <Profile />
+      ) : (
+        <>
+          <Signup />
+          <Login />
+        </>
+      )}
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
+  );
+}
 
+export default App;
 
 
 
