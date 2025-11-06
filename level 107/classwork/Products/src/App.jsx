@@ -1,7 +1,13 @@
+import { useState } from 'react'
 import Products from './Page/Page'
 
-function App() {
 
+function App() {
+  const [cart,setCart] = useState([ ])
+  
+  const cardRemove = () =>{
+
+  }
 
   return (
     <>
