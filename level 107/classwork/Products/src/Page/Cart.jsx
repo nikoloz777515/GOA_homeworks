@@ -3,9 +3,9 @@ import CartItem from "./CartItem"
 import { CartContext } from "./CartContext"
 
 function Cart(){
-    const {cart,removeFromCart,total} = useContext(CartContext)
+    const {cart,AddTocart,CartRemove,Total} = useContext(CartContext)
 
-    if(cart.lenth === 0){
+    if(cart.length === 0){
         return <p>
             Your Cart is empty
         </p>
@@ -13,9 +13,9 @@ function Cart(){
     return(
         <div>
             {cart.map((item)=>
-            <CartItem key={item.id} item = {item} removeFromCart={removeFromCart}/>
+            <CartItem key={item.id} item = {item} CartRemove={CartRemove}/>
             )}
-            <h2>Total: {total.toFixed(2)}</h2>
+            <h2>Total: {Total.toFixed(2)}</h2>
         </div>
     )
 
