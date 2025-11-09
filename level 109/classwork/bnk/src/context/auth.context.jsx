@@ -1,44 +1,59 @@
 import { createContext, useContext, useState } from "react";
 
-const Authcontext =  createContext()
+const AuthContext = createContext();
 
-export const useAuth = () => useContext(Authcontext)
+export const useAuth = () => useContext(AuthContext)
 
-export const Autprovider = ({children}) =>{
+export const AuthProvider = ({ children }) => {
     const [user,setUser] = useState(null)
 
-    const register = (formData) =>{
-        const users = JSON.parse(localStorage.getItem('users'))
+    const register = (formData) => {
+    const users = JSON.parse(localStorage.getItem("users")) || [];
 
-        if(!users){
-            localStorage.setItem('users',JSON.stringify([formData]))
+    const existUser = users.find((obj) => obj.email === formData.email);
 
-        }else{
-            const existUser = users.find(obj =>obj.email === formData.email)
-        }
-        if(existUser){
-            alert("user is exist")
-            return;
-        }
-        
+    if (existUser) {
+      alert("User already exists");
+      return;
     }
-    const login = (formData) =>{
-        const users = JSON.parse(localStorage.getItem('users')) || []
-        const user = users.find(user => user.email === formData && user.password === formData.password)
 
-        if(!user){
-            alert("user dont exist")
-            return
-        }
+    const updatedUsers = [...users, formData];
+    localStorage.setItem("users", JSON.stringify(updatedUsers));
+    setUser(formData);
+    alert("Registered successfully!");
+  };
+    localStorage.setItem("users", JSON.stringify(updatedUsers));
+    setUser(formData);
+    alert("Registered successfully!");
+  };
 
+  const login = (formData) => {
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const existingUser = users.find(
+      (u) => u.email === formData.email && u.password === formData.password
+    );
+
+    if (!existingUser) {
+      alert("User not found or incorrect password");
+      return;
     }
+
+    setUser(existingUser);
+    alert("Logged in successfully!");
+  };
+
+  const logout = () => {
+    setUser(null);
+    alert("Logged out");
+  };
+
     return(
-        <Authcontext.Provider value={{user,register,login}}>
+        <AuthContext.Provider value={{user,register,login,logout}}>
             {children}
-        </Authcontext.Provider>
+        </AuthContext.Provider>
     )
 
-}
+
 
 
 
