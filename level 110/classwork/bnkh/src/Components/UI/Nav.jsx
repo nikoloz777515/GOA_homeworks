@@ -4,9 +4,7 @@ import Profile from "../../Profile";
 const Nav = () =>{
     return(
 
-        {
-            ? <Profile />
-        }
+  
         <header>
             <nav>
                 <ul>
