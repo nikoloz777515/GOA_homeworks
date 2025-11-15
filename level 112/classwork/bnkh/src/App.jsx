@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import PrimeCalculator from './optimize'
+import ExspensiveComponent from './Idk'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
     <PrimeCalculator />
+    <ExspensiveComponent />
     </>
   )
 }
@@ -20,12 +22,3 @@ export default App
 // 1) გატესტეთ ეს კომპონენტი  React profiller_ის გამოყენებით
 
 
-// 2) (ახსენით კომენტარებით რას აკეთებეს useMemo და რა არის ქეშირება)
-
-
-
-// ქეშირება არის შენახვა
-
-//  useMemo არის რეაქთის კაუჭი რომელიც ინახავს შედეგ რომელიც ინახავს  ფუნქციის გამოთვლილი შედეგს ოპტიმიზაციისთვის
-// ანუ როცა გვაქვს ისეთი ფუნქცია რომელიც დიდ დროს მოითხოვს
-// useMemo თავიდან არ გამოითვლის მას ყოველ დარენდერებაზე არამედ გამოიყენებს უკვე შენახულ cached შედეგეგებს და გამოთვლის მაგის მიხედვით 
