@@ -2,8 +2,9 @@ import { useMemo } from "react";
 import { useState } from "react";
 
 const calculateFibonacci = (num) =>{
+      if(num < 0) return 0;
       if (num === 0) return 0;
-    if (num === 1) return 1;
+      if (num === 1) return 1;
 
      return calculateFibonacci(num - 1) + calculateFibonacci(num - 2);
 } 
@@ -12,10 +13,11 @@ const calculateFibonacci = (num) =>{
         const [number,setNumber] = useState(0)
         const [text,setText] = useState("")
 
-        const FiboValue = useMemo(() =>{
-            console.log("its right",number)
-            return(calculateFibonacci(Number(number)))
-        },[number])
+        const fiboValue = useMemo(() => {
+    return calculateFibonacci(number);
+}, [number]);
+
+        
 
         return(
             <div>
@@ -30,7 +32,7 @@ const calculateFibonacci = (num) =>{
                 value={number}
                 onChange={(e) => setNumber(e.target.value)}
             />
-            <p>Fibonacci: {FiboValue}</p>
+            <p>Fibonacci: {fiboValue}</p>
             </div>
         )
      }

@@ -2,15 +2,33 @@ import { useMemo,useState } from "react";
 
 
 function Inp(){
-    const [number,setNumber] = useState("")
+    const [number,setNumber] = useState(1)
+    const [text,setText] = useState("")
+    
+
+    console.log(number)
+
+    const getFactorial = useMemo(() =>{
+        let res = 1
+
+        for(let i = 1; i <= number; i++){
+            res *= i
+        }
+        return res
+
+        
+    },[number])
 
     return(
         <>
-        <form>
+            <h1>Factorial Calculator</h1>
 
-            <input type="text" placeholder="please enter a number" onChange={dsds} />
-            <button>submit</button>
-        </form>
+        <input type="number" value={number} onChange={(e) =>setNumber(Number(e.target.value))} />
+                <p>Factorial: {getFactorial}</p>
+
+        <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+                    <p>text: {text}</p>
+        
         
         
         </>
