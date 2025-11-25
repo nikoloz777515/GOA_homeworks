@@ -1,0 +1,10 @@
+const fs =  require("fs")
+
+if(fs.existsSync("text1.txt")){
+    console.log("file found ")
+}else{
+    console.log("file  missing ")
+}
+
+
+// 7) შეამოწმეთ არსებობს თუ არა ფაილი, ფაილის სახელი არის text1.txt - თუ მოცემული ფაილი არსებობს დაბეჭდეთ File found, თუ არა დაბეჭდეთ File missing ამისათვის გამოიყენეთ existsSync
