@@ -5,10 +5,10 @@ const url = require('url')
 
 
 const server =  http.createServer((req,res)=>{
-        const parsedUrl = url.parse(req.url, true); // true -> query ობიექტში
-    const query = parsedUrl.query; // აქ გვექნება { type: 'admin' } ან სხვა
+        const parsedUrl = url.parse(req.url, true); 
+    const query = parsedUrl.query;
 
-    res.setHeader("Content-Type", "text/plain"); // ან JSON
+    res.setHeader("Content-Type", "text/plain"); 
 
     if(query.type === 'admin'){
         res.end("Hello Admin")
