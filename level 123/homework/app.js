@@ -5,9 +5,9 @@ const  url  = require('url')
 
 
 const server = http.createServer((req,res)=>{
-    const pathFile =  path.join('cars.json')
-    const PrasedUrl = url.parse(req,url,true)
-        if(req.url === '/'){
+    const pathFile =  path.join(__dirname,'cars.json')
+    const PrasedUrl = url.parse(req.url,true)
+        if(PrasedUrl.pathname === '/'){
           fs.readFile(pathFile,(err,data)=>{
             if(err) {
                 res.statusCode = 500
@@ -28,6 +28,15 @@ const server = http.createServer((req,res)=>{
                         res.end('erorr')
                         return
                       }
+                      const cars = JSON.parse(data)
+                      const car = cars.find(c => c.id === carId)
+                      if(!car){
+                        res.statusCode = 404
+                        res.end(JSON.stringify({err: 'Car not found'}))
+                        return
+                      }
+                      res.setHeader('Content-Type','application/json')
+                       res.end(JSON.stringify(car))
                   })
 
 
