@@ -1,21 +1,42 @@
 const http = require('http')
 const fs = require('fs')
 const path = require('path')
+const  url  = require('url')
 
 
 const server = http.createServer((req,res)=>{
     const pathFile =  path.join('cars.json')
+    const PrasedUrl = url.parse(req,url,true)
         if(req.url === '/'){
-          fs.readFile(pathFile,(data)=>{
-            if(data){
-                res.setHeader('Content-Type', 'application/json')
-                res.end(data)
+          fs.readFile(pathFile,(err,data)=>{
+            if(err) {
+                res.statusCode = 500
+                res.end('Server Error')
+                return
             }
+             res.setHeader('Content-Type', 'application/json')
+            res.end(data)
+
+            
           })
-        }else{
+          
+        }else if(PrasedUrl.pathname === '/cars/car'){
+             const carId = Number(PrasedUrl.query.id)
+                  fs.readFile(pathFile,(err,data)=>{
+                      if(err){
+                        res.statusCode = 500
+                        res.end('erorr')
+                        return
+                      }
+                  })
+
+
+        }
+        else{
             res.statusCode = 404
             res.end('Not Found')
         }
+        
 })
 
 
