@@ -28,11 +28,14 @@ const server = http.createServer((req,res)=>{
                         res.end('erorr')
                         return
                       }
-                      const cars = JSON.parse(data)
-                      const car = cars.find(c => c.id === carId)
+                      const json = JSON.parse(data)
+                    const cars = json.cars
+                     const car = cars.find(c => c.id === carId)
+
                       if(!car){
                         res.statusCode = 404
-                        res.end(JSON.stringify({err: 'Car not found'}))
+                        res.setHeader('Content-Type', 'application/json')
+                        res.end(JSON.stringify({ error: 'Car not found' }))
                         return
                       }
                       res.setHeader('Content-Type','application/json')
