@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "iPhone 13",
+      "price": 2500,
+      "category": "phones",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "title": "Samsung Galaxy S22",
+      "price": 2200,
+      "category": "phones",
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "title": "MacBook Pro M1",
+      "price": 5200,
+      "category": "laptops",
+      "inStock": false
+    },
+    {
+      "id": 4,
+      "title": "Dell XPS 13",
+      "price": 4100,
+      "category": "laptops",
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "title": "Sony WH-1000XM5",
+      "price": 1200,
+      "category": "headphones",
+      "inStock": true
+    }
+  ]
+}

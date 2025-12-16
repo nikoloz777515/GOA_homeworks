@@ -80,9 +80,36 @@ const server = http.createServer((req, res) => {
         case 'POST':
             return handlePostRequest(req, res);
             break;
+        case 'DELETE':
+            return handleDelete(req,res);
+            break;
         default:
             res.end("Method or path is not defined!");
             break;
+    }
+
+    const handleDelete = (req,res) =>{
+         const url = new URL(req.url, `http://${req.headers.host}`);
+    const id = url.searchParams.get('id');
+
+    if (req.url.startsWith('/products') && id) {
+        const products = readProducts();
+        const index = products.findIndex(p => p.id == id);
+
+        if (index === -1) {
+            res.writeHead(404, { 'Content-Type': 'application/json' });
+            return res.end(JSON.stringify({ message: 'Product not found' }));
+        }
+
+        const deletedProduct = products.splice(index, 1);
+        writeProducts(products);
+
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        return res.end(JSON.stringify(deletedProduct[0]));
+    }
+
+    res.writeHead(404);
+    res.end();
     }
 });
 
@@ -115,6 +142,9 @@ server.listen(3000, () => {
 // წაკითხვის შემდეგ დაამატეთ products მასივში ახალი ობიექტი და ავტომატურად მიანიჭეთ id (edited)Thursday, December 11, 2025 
 // 3) createServer მეთოდში გადაცემულ ფუნქციაში გამოიყენეთ switch რომ შეამოწმოთ მეთოდი, თუ მეთოდი არის GET გამოიძახეთ handleGetRequest, POSTმეთოდის შემთხვევაში გამოიძახეთ handlePostRequest, ხოლო თუ არცერთი მეთოდი არაა დააბრუნეთ ერორი სადაც ახსნით რომ ეს მეთოდი განსაზღვრული არაა
 
+
+
+//bonus
 // 1) დაამატეთ DELETE მეთოდი რომლითაც წაშლით პროდუქტს სიიდან
 
 // 2) დამატების ან წასლში შემთხვევაში შეცვალეთ products.json ფაილიც.
