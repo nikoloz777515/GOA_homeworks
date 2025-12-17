@@ -33,6 +33,14 @@ const writeProducts = (products) => {
     fs.writeFileSync('./products.json', JSON.stringify({ products }, null, 2));
 };
 
+const readUsers = () => {
+    const data = fs.readFileSync('./users.json', 'utf-8');
+    return JSON.parse(data).users;
+};
+
+const writeUsers = (users) => {
+    fs.writeFileSync('./users.json', JSON.stringify({ users }, null, 2));
+};
 
 
 const handleDelete = (req,res) =>{
@@ -105,6 +113,31 @@ const handlePostRequest = async (req, res) => {
 }
 
 
+const deleteUser = (req,res)=>{
+    const url = new URL(req.url, `http://${req.headers.host}`);
+    const id = url.searchParams.get('id');
+    const role = url.searchParams.get('role');
+
+    if(role !== 'admin') {
+        res.writeHead(403, { 'Content-Type': 'application/json' });
+        return res.end(JSON.stringify({ message: 'Forbidden: Only admin can delete users' }));
+    }
+
+    const users = readUsers();
+    const index = users.findIndex(u => u.id == id);
+
+    if(index === -1) {
+        res.writeHead(404, { 'Content-Type': 'application/json' });
+        return res.end(JSON.stringify({ message: 'User not found' }));
+    }
+
+    const deletedUser = users.splice(index, 1);
+    writeUsers(users);
+
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(deletedUser[0]));
+}
+
 const server = http.createServer((req, res) => {
     const method = req.method;
 
@@ -116,8 +149,15 @@ const server = http.createServer((req, res) => {
             return handlePostRequest(req, res);
             break;
         case 'DELETE':
-            return handleDelete(req,res);
-            break;
+    if (req.url.startsWith('/users')) {
+        return deleteUser(req, res);
+    } else if (req.url.startsWith('/products')) {
+        return handleDelete(req, res);
+    } else {
+        res.writeHead(404, { 'Content-Type': 'application/json' });
+        return res.end(JSON.stringify({ message: 'Not found' }));
+    }
+    break;
         default:
             res.end("Method or path is not defined!");
             break;
@@ -134,30 +174,12 @@ server.listen(3000, () => {
 
 
 
-// 1) products.json წაიკითხეთ ყველა ინფორმაცია და შეინახეთ ცალკე ცვლადში სახელად products, შემდეგ შექმენით 2 ფუნქცია, handleGetRequest და handlePostRequest, ორივე ფუნქციას გადაეცემა req და res ობიექტები, handleGetRequest ში შეამოწმეთ req.url, თუ წერია /products დაუბრუნეთ მთლიანი პროდუქტების სია, თუ წერია /products/1... მოიძიეთ მასივში ობიექტი კონკრეტული id რომელიც გამოგეცათ და დაუბრუნეთ მხოოლოდ ეგ ობიექტი. ორივე შემთხვევაში აბრუნებთ JSON ინფორმაციას
-// :white_check_mark:
-// 2) handlePostRequest ფუნქციაში უნდა მიიღოთ და წაიკიტხოთ ინფორმაცია რომელიც გამოგვიუგზავნეს
-
-// შემდეგ შეამოწქმეთ ბილიკი, თუ ბილიკი უდრის /product დაამატეთ მიღებული ობიექტი მასივში
-
-// სტრუქტურა სატესტო ობიექტის რომელიც უნდა გააგზავნოთ POSTMAN დან
-
-// ობიექტის კუთვნილებები: 
-
-// {
-//             "id": 1,
-//             "name": "Wireless Headphones",
-//             "category": "electronics",
-//             "price": 79.99,
-//             "description": "High-quality wireless headphones with noise cancellation"
-//     } (ეს არის ობიექტის მაგალითი რომელიც უნდა გააგზავნოთ)
-
-// წაკითხვის შემდეგ დაამატეთ products მასივში ახალი ობიექტი და ავტომატურად მიანიჭეთ id (edited)Thursday, December 11, 2025 
-// 3) createServer მეთოდში გადაცემულ ფუნქციაში გამოიყენეთ switch რომ შეამოწმოთ მეთოდი, თუ მეთოდი არის GET გამოიძახეთ handleGetRequest, POSTმეთოდის შემთხვევაში გამოიძახეთ handlePostRequest, ხოლო თუ არცერთი მეთოდი არაა დააბრუნეთ ერორი სადაც ახსნით რომ ეს მეთოდი განსაზღვრული არაა
 
 
 
-//bonus
-// 1) დაამატეთ DELETE მეთოდი რომლითაც წაშლით პროდუქტს სიიდან
 
-// 2) დამატების ან წასლში შემთხვევაში შეცვალეთ products.json ფაილიც.
+// 1) თქვენს პროექტს დაამატეთ DeleteUser ფუნცია, შეამოწმეთ იმ შემთხვევაში თუ მომხმარებლის role არის admin, მაშინ მან უნდა შეძლოს გადმოცემული Id - ით მომხმარებლის წაშლა, თუ Id - ით მომხმარებელი ვერ მოიძებნა გამოიტანეთ მნიშვნელობა “User not found” შესაბამისი status code - ით, გატესტეთ მუშაობა postman - ის გამოყენებით
+
+
+
+// 3) ვისაც არ გაქვთ დასრულებული მიცემული სექციები, გაიარეთ
