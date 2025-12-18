@@ -9,6 +9,21 @@
 
 // https://www.codewars.com/kata/5a8d2bf60025e9163c0000bc/train/javascript
 
+// function solve(arr){
+//   freq = {}
+  
+//   for(let num of arr){
+//     freq[num] =(freq[num] || 0) + 1
+//   }
+//   return arr.sort((a,b)=>{
+//     if(freq[a] === freq[b]){
+//       return a - b
+//     }
+    
+//     return freq[b] - freq[a]
+//   })
+// }
+
 
 // https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript
 // function alphabetPosition(text) {

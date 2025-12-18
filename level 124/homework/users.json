@@ -1,7 +1,12 @@
 {
   "users": [
-    { "id": 1, "name": "Nikoloz", "role": "admin" },
-    { "id": 2, "name": "Mariam", "role": "user" },
-    { "id": 3, "name": "Giorgi", "role": "user" }
+    {
+      "email": "example@gmail.com",
+      "password": "niko12345"
+    },
+    {
+      "email": "example@gmailll.com",
+      "password": "niko2345"
+    }
   ]
 }
