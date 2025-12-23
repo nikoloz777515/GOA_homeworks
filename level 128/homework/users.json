@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 4,
+      "name": "Nika",
+      "email": "nika@gmail.com",
+      "age": 22,
+      "Active": false,
+      "year": 1939
+    },
+    {
+      "id": 4,
+      "name": "Mari",
+      "email": "mari@gmail.com",
+      "age": 25,
+      "Active": false,
+      "year": 1939
+    },
+    {
+      "id": 3,
+      "name": "Giorgi",
+      "email": "giorgi@gmail.com",
+      "age": 30,
+      "Active": true
+    }
+  ]
+}
