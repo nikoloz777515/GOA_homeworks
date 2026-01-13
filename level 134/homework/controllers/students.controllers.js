@@ -23,4 +23,6 @@ const getStudentbyID = (req,res) =>{
   res.status(200).json(student)
 }
 
-const
+const createStudent = (req,res) =>{
+  
+}
