@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const API_URL = 'http://localhost:3000/auth';
 
-function SignUp() {
+function SignUp({setUser}) {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -23,9 +23,12 @@ function SignUp() {
       });
 
       const result = await res.json();
-      alert(result.message);
-      if (res.ok) navigate("/login");
-      e.target.reset();
+      alert(result.message)
+
+      if (res.ok){
+       setUser(result.user)
+        navigate("/profile")
+      }
 
     } catch (err) {
       console.log(err);
@@ -41,7 +44,8 @@ function SignUp() {
         <input type="password" name="password" placeholder="Password" required />
         <button>Submit</button>
       </form>
-      <p>Already have account? <Link to="/login">Login</Link></p>
+        <p>Already have account? <Link to="/login">Login</Link></p>
+
     </main>
   );
 }
@@ -66,8 +70,8 @@ function LogIn({ setUser }) {
 
       const result = await res.json();
       if (res.ok) {
-        setUser(result.user);
-        navigate("/profile");
+         setUser(result.user);  
+    navigate("/profile"); 
       } else {
         alert(result.message);
       }
@@ -90,15 +94,22 @@ function LogIn({ setUser }) {
   );
 }
 
-function Profile({ user }) {
+function Profile({ user, setUser }) {
+  const navigate = useNavigate();
+
   if (!user) return <p>Please login first</p>;
+
+  const handleLogout = () => {
+    setUser(null);
+    navigate("/login");
+  };
 
   return (
     <div>
       <h2>Profile</h2>
       <p>Username: {user.username}</p>
       <p>Email: {user.email}</p>
-      <Link to="/login">Logout</Link>
+      <button onClick={handleLogout}>Logout</button>
     </div>
   );
 }
@@ -109,10 +120,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signup" element={<SignUp  setUser = {setUser}/>} />
         <Route path="/login" element={<LogIn setUser={setUser} />} />
-        <Route path="/profile" element={<Profile user={user} />} />
-        <Route path="*" element={<SignUp />} />
+        <Route path="/profile" element={<Profile user={user}  setUser = {setUser} />} />
+      <Route path="*" element={<SignUp setUser={setUser} />} />
+
       </Routes>
     </BrowserRouter>
   );
