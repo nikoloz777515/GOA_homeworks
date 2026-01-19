@@ -1,13 +1,15 @@
-const fs = require('fs');
-const path = require('path');
-const FILE_URL = path.join(__dirname, '../database/users.json');
+const fs = require("fs");
 
-const readFile = () => {
-  return JSON.parse(fs.readFileSync(FILE_URL, 'utf8'));
-};
+function readFile(filePath) {
+  if (!fs.existsSync(filePath)) return [];
+  const data = fs.readFileSync(filePath, "utf-8");
+  return data ? JSON.parse(data) : [];
+}
 
-const writeFile = (data) => {
-  fs.writeFileSync(FILE_URL, JSON.stringify(data, null, 2), 'utf8');
-};
+function writeFile(newData, filePath) {
+  const existing = readFile(filePath);
+  existing.push(newData);
+  fs.writeFileSync(filePath, JSON.stringify(existing, null, 2));
+}
 
 module.exports = { readFile, writeFile };

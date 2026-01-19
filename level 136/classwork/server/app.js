@@ -1,14 +1,14 @@
-const express = require('express')
-const cors = require('cors')
+const express = require("express");
+const cors = require("cors");
+const authRouter = require("./routers/users.roters");
+const postRouter = require("./routers/postRouter");
 
-const authRouter = require('./routers/users.roters')
-const app = express()
+const app = express();
 
-app.use(cors())
-app.use(express.json())
+app.use(cors({ origin: "http://localhost:5173" }));
+app.use(express.json());
 
-app.use('/auth',authRouter)
+app.use("/auth", authRouter);
+app.use("/api/post", postRouter);
 
-app.listen(3000,()=>{
-  console.log('server is listen on port 3000')
-})
+app.listen(3000, () => console.log("Server listening on port 3000"));
