@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const authRouter = require("./routers/users.roters");
+
+const authRouter = require("./routers/users.router");
 const postRouter = require("./routers/postRouter");
 
 const app = express();
@@ -11,4 +12,6 @@ app.use(express.json());
 app.use("/auth", authRouter);
 app.use("/api/post", postRouter);
 
-app.listen(3000, () => console.log("Server listening on port 3000"));
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});

@@ -5,7 +5,12 @@ const UploadPost = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = { title: e.target.title.value, content: e.target.content.value };
+
+    const data = {
+      title: e.target.title.value,
+      content: e.target.content.value
+    };
+
     await createPost(data);
     e.target.reset();
   };
@@ -14,7 +19,7 @@ const UploadPost = () => {
     <form onSubmit={handleSubmit}>
       <input name="title" placeholder="Title" required />
       <textarea name="content" placeholder="Content" required />
-      <button>Upload Post</button>
+      <button>Create Post</button>
     </form>
   );
 };

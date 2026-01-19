@@ -30,6 +30,10 @@ function App() {
               path="/posts"
               element={<ProtectedRoute><Posts /></ProtectedRoute>}
             />
+            <Route
+  path="/profile"
+  element={<ProtectedRoute><Profile /></ProtectedRoute>}
+/>
 
             <Route path="*" element={<SignUp />} />
           </Routes>
