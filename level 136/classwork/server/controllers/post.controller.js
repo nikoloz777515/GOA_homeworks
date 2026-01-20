@@ -33,4 +33,52 @@ const getUserPosts = (req, res) => {
   res.json(userPosts);
 };
 
-module.exports = { createPost, getPosts, getUserPosts };
+
+const fs = require('fs')
+
+
+const deletePost = (req, res) => {
+  const { id } = req.params;
+
+  const posts = readFile(POSTS_FILE);
+  const post = posts.find(p => p.id === Number(id));
+
+  if (!post) {
+    return res.status(404).json({ message: "Post not found" });
+  }
+
+  const filtered = posts.filter(p => p.id !== Number(id));
+
+  fs.writeFileSync(
+    POSTS_FILE,
+    JSON.stringify(filtered, null, 2)
+  );
+
+  res.json({ message: "Post deleted" });
+};
+
+
+const updaTePost=(req,res) =>{
+    const { id } = req.params;
+  const { title, content, userId } = req.body;
+
+  const posts = readFile(POSTS_FILE)
+
+  const index = posts.findIndex(p => p.id === Number(id))
+
+    if (index === -1) return res.status(404).json({ message: "Post not found" })
+
+        if (posts[index].userId !== userId) {
+    return res.status(403).json({ message: "Not allowed" });
+  }
+
+  posts[index].title = title
+  posts[index].content = content
+
+  fs.writeFileSync(POSTS_FILE,JSON.stringify(posts,null,2))
+  res.json(posts[index])
+
+}
+
+module.exports = { createPost, getPosts, getUserPosts, deletePost,
+  updaTePost };
