@@ -6,12 +6,12 @@ const PostsSection = () => {
     <div>
       <h2>My Posts Section</h2>
 
-      {/* პოსტის შექმნა */}
+     {/* create Post */}
       <UploadPost />
 
       <hr />
 
-      {/* უკვე დამატებული პოსტები */}
+    {/* created post */}
       <Posts />
     </div>
   );

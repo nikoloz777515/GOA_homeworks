@@ -7,10 +7,20 @@ export const usePost = () => useContext(PostContext);
 const API_URL = "http://localhost:3000/api/post";
 
 export const PostProvider = ({ children }) => {
-  const [posts, setPosts] = useState([]);
   const { user } = useAuth();
 
-  // -------- CREATE --------
+ const [posts, setPosts] = useState(() => {
+  try {
+    const saved = localStorage.getItem("posts");
+    return saved ? JSON.parse(saved) : [];
+  } catch (err) {
+    console.log("Failed to parse localStorage posts:", err);
+    return [];
+  }
+});
+
+  
+  // CREATE 
   const createPost = async (postData) => {
     if (!user) return alert("Please login first");
 
@@ -23,32 +33,47 @@ export const PostProvider = ({ children }) => {
     const data = await res.json();
     if (!res.ok) return alert(data.message);
 
-    setPosts(prev => [...prev, data]);
+    setPosts(prev => {
+      const updated = [...prev,data]
+      localStorage.setItem('posts',JSON.stringify(updated))
+      return updated
+    });
   };
 
-  // -------- GET ALL --------
+  //  GET ALL 
   const getPosts = async () => {
     const res = await fetch(API_URL);
     const data = await res.json();
 
     if (!res.ok) return alert(data.message);
-    setPosts(data);
+
+     setPosts(data);
+  localStorage.setItem("posts", JSON.stringify(data));
   };
+ 
 
-  // -------- DELETE --------
-  const deletePost = async (id) => {
-    if (!user) return;
 
-    const res = await fetch(`${API_URL}/${id}`, {
-      method: "DELETE",
-    });
+  // DELETE 
+const deletePost = async (id) => {
+  if (!user) return;
 
-    if (!res.ok) return alert("Delete failed");
+  const res = await fetch(`${API_URL}/${id}?userId=${user.id}`, {
+    method: "DELETE",
+  });
 
-    setPosts(prev => prev.filter(p => p.id !== id));
-  };
+  if (!res.ok) {
+    const err = await res.json();
+    return alert(err.message);
+  }
 
-  // -------- UPDATE --------
+  setPosts(prev => {
+    const updated = prev.filter(p => p.id !== id);
+    localStorage.setItem("posts", JSON.stringify(updated));
+    return updated;
+  });
+};
+
+  //  UPDATE 
   const updatePost = async (id, updatedData) => {
     if (!user) return;
 
@@ -61,9 +86,13 @@ export const PostProvider = ({ children }) => {
     const data = await res.json();
     if (!res.ok) return alert(data.message);
 
-    setPosts(prev =>
-      prev.map(p => (p.id === Number(id) ? data : p))
-    );
+   setPosts(prev => {
+      const updated = prev.map(p =>
+        p.id === Number(id) ? data : p
+      );
+      localStorage.setItem("posts", JSON.stringify(updated));
+      return updated;
+    });
   };
 
   return (

@@ -1,10 +1,8 @@
 const express = require("express");
 const {
-  createPost,
-  getPosts,
-  deletePost,
-  updaTePost
-} = require("../controllers/post.controller"); // შენს controller–დან
+  createPost, getPosts, deletePost,
+  updaTePost 
+} = require("../controllers/post.controller"); 
 
 const router = express.Router();
 
@@ -13,4 +11,4 @@ router.get("/", getPosts);
 router.delete("/:id", deletePost);
 router.put("/:id", updaTePost);
 
-module.exports = router; // აუცილებლად router
+module.exports = router; 

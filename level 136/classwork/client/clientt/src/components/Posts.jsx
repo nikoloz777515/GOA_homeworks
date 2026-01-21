@@ -9,7 +9,7 @@ const Posts = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // კომპონენტის ჩატვირთვისას ყველა პოსტის წამოღება backend-იდან
+    
     getPosts();
   }, []);
 

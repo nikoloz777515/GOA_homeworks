@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const authRouter = require("./routers/users.router");
-const postRouter = require("./routers/post.router.js"); // 👈 აქ არის მთავარი fix
+const postRouter = require("./routers/post.router.js");
 
 const app = express();
 

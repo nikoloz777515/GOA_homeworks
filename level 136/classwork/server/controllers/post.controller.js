@@ -1,4 +1,5 @@
 const path = require("path");
+const fs = require('fs')
 const { readFile, writeFile } = require("../utils/file");
 
 const POSTS_FILE = path.join(__dirname, "../database/posts.json");
@@ -22,45 +23,33 @@ const createPost = (req, res) => {
 };
 
 const getPosts = (req, res) => {
-  const posts = readFile(POSTS_FILE);
-  res.json(posts);
+    const posts = readFile(POSTS_FILE)
+    const {userId} = req.query 
+
+    if(userId){
+      const userPost = posts.filter(p => p.userId === Number(userId))
+        return res.json(userPost)
+    }
+    res.json(posts)
 };
-
-const getUserPosts = (req, res) => {
-  const userId = Number(req.params.userId);
-  const posts = readFile(POSTS_FILE);
-  const userPosts = posts.filter(p => p.userId === userId);
-  res.json(userPosts);
-};
-
-
-const fs = require('fs')
 
 
 const deletePost = (req, res) => {
   const { id } = req.params;
-   const { userId } = req.body;
+  const userId = Number(req.query.userId);
+
+  if (!userId) return res.status(400).json({ message: "UserId is required" });
 
   const posts = readFile(POSTS_FILE);
-  const post = posts.find(p => p.id === Number(id))
+  const post = posts.find(p => p.id === Number(id));
 
-  if (!post) {
-    return res.status(404).json({ message: "Post not found" })
-  }
-  if(post.userId !== userId){
-    return res.status(403).json({
-      message: 'Not allowed to delete'
-    })
-  }
+  if (!post) return res.status(404).json({ message: "Post not found" });
+  if (post.userId !== userId) return res.status(403).json({ message: "Not allowed to delete" });
+
   const filtered = posts.filter(p => p.id !== Number(id));
+  fs.writeFileSync(POSTS_FILE, JSON.stringify(filtered, null, 2));
 
-
-  fs.writeFileSync(
-    POSTS_FILE,
-    JSON.stringify(filtered, null, 2)
-  );
-
-  res.json({ message: "Post deleted" })
+  res.json({ message: "Post deleted" });
 };
 
 
@@ -86,5 +75,5 @@ const updaTePost=(req,res) =>{
 
 }
 
-module.exports = { createPost, getPosts, getUserPosts, deletePost,
+module.exports = { createPost, getPosts, deletePost,
   updaTePost };
