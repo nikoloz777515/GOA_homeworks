@@ -16,40 +16,24 @@ const Posts = () => {
   return (
     <div>
       {posts.map(p => (
-        <div
-          key={p.id}
-          style={cardStyle}
-        >
-          {/* 
-            პოსტის სათაურზე დაჭერისას გადავდივართ
-            ცალკე გვერდზე კონკრეტული პოსტის სანახავად
-          */}
+        <div key={p.id} style={cardStyle}>
+       
           <h4
-            style={{ cursor: "pointer", color: "#4CAF50" }}
-            onClick={() => navigate(`/posts/${p.id}`)}
-          >
-            {p.title}
+            style={{ cursor: "pointer", color: "#4CAF50" }} onClick={() => navigate(`/posts/${p.id}`)}> 
+            author: {p.title}
           </h4>
 
           <p>{p.content}</p>
 
-          {/* 
-            თუ პოსტის userId ემთხვევა ლოგინ მომხმარებლის id-ს,
-            მხოლოდ მაშინ ვაჩვენებთ Edit / Delete ღილაკებს
-          */}
+         
           {user && p.userId === user.id && (
             <div style={{ marginTop: "10px" }}>
-              <button
-                style={btnDelete}
-                onClick={() => deletePost(p.id)}
-              >
+              <button style={btnDelete} onClick={() => deletePost(p.id)}>
                 Delete
               </button>
 
               <button
-                style={btnEdit}
-                onClick={() => navigate(`/edit/${p.id}`)}
-              >
+                style={btnEdit} onClick={() => navigate(`/edit/${p.id}`)}>
                 Edit
               </button>
             </div>
@@ -60,7 +44,7 @@ const Posts = () => {
   );
 };
 
-/* ---------- styles ---------- */
+
 
 const cardStyle = {
   backgroundColor: "#fff",

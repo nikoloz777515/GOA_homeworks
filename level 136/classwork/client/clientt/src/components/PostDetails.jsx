@@ -13,7 +13,7 @@ const PostDetails =() =>{
 
   return(
     <div>
-      <h2>{post.title}</h2>
+      <h2>author: {post.title}</h2>
       <p>{post.content}</p>
     </div>
   )

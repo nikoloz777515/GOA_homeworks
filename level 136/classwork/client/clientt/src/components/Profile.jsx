@@ -2,10 +2,20 @@ import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import UploadPost from "./UploadPost.jsx";
 import Posts from "./Posts.jsx";
+import { useEffect,useState } from "react";
 
 function Profile() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+
+  const [posts,setPosts] = useState([])
+
+ useEffect(() => {
+    fetch("http://localhost:3000/api/post")
+      .then(res => res.json())
+      .then(data => setPosts(data))
+      .catch(err => console.log(err));
+  }, [posts]);
 
   if (!user) return <p>Please login first</p>;
 
@@ -35,7 +45,7 @@ function Profile() {
 
       <div style={styles.postSection}>
         <h3 style={styles.subHeading}>All Posts</h3>
-        <Posts />
+        <Posts posts = {posts}/>
       </div>
     </div>
   );

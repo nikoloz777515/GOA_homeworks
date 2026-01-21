@@ -45,7 +45,6 @@ export const PostProvider = ({ children }) => {
 
     if (!res.ok) return alert("Delete failed");
 
-    // frontend-დან წაშლა
     setPosts(prev => prev.filter(p => p.id !== id));
   };
 
