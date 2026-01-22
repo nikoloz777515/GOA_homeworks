@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require('fs')
 const { readFile, writeFile } = require("../utils/file");
+const router = express.Router()
 
 const POSTS_FILE = path.join(__dirname, "../database/posts.json");
 
@@ -75,5 +76,11 @@ const updaTePost=(req,res) =>{
 
 }
 
+
 module.exports = { createPost, getPosts, deletePost,
   updaTePost };
+
+
+  
+  
+// 1) გამოიყენეთ param მეთოდი, იმისათის რომ შეამოწმოთ პარამეტრი postId, შეამოწმეთ არსებობს თუ არა კონკრეტული პოსტი თუ არ არსებობს დააბრუნეთ ერორი, თუ არსებობს request ობიექტზე დაამაგრეთ post/posts კუთვნილებები და შემდეგ გამოიყენეთ next, ხოლო იმ კონტროლერებში სადაც მეორდება პოსტის შეამოწმებელკი ლოგიკა წაშალეთ. (ახსენით კომენტარებით რაში გვეხმარება param მეთოდი)

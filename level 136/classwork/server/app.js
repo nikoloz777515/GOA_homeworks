@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const erorHandler = require('../server/middlewares/middleawares.HandleErorr.js')
 
 const authRouter = require("./routers/users.router");
 const postRouter = require("./routers/post.router.js");
@@ -11,6 +12,8 @@ app.use(express.json());
 
 app.use("/auth", authRouter);
 app.use("/api/post", postRouter);
+
+app.use(erorHandler);
 
 app.listen(3000, () => {
   console.log("Server running on http://localhost:3000");
