@@ -1,6 +1,6 @@
 const {readFile,writeFile} = require('../utils/heper')
 
-const createBooking =(req,res) =>{
+const createBooking = (req,res) =>{
   const bookings = readFile('database/booking.json')
     const booking ={
       id: Date.now(),
