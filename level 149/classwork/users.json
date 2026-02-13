@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Nika", "age": 18, "grade": "A", "active": true },
+  { "id": 2, "name": "Luka", "age": 17, "grade": "B", "active": true },
+  { "id": 3, "name": "Mariam", "age": 19, "grade": "A", "active": false },
+  { "id": 4, "name": "Ana", "age": 18, "grade": "C", "active": true },
+  { "id": 5, "name": "Gio", "age": 20, "grade": "B", "active": true },
+  { "id": 6, "name": "Saba", "age": 16, "grade": "A", "active": false },
+  { "id": 7, "name": "Elene", "age": 17, "grade": "B", "active": true },
+  { "id": 8, "name": "Dato", "age": 21, "grade": "C", "active": true },
+  { "id": 9, "name": "Tako", "age": 18, "grade": "A", "active": true },
+  { "id": 10, "name": "Irakli", "age": 19, "grade": "B", "active": false }
+]
