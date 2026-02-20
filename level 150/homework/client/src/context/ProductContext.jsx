@@ -19,7 +19,7 @@ const getProducts = async () => {
   try {
     const res = await fetch(API_URL);
     const data = await res.json();
-    setProducts(data); // JSON array
+    setProducts(data);
   } catch (err) {
     console.log(err);
   }
@@ -27,13 +27,11 @@ const getProducts = async () => {
 
   const addProduct = async (data)=>{
     try{
-      const res = await fetch(`${API_URL}/product`,{
-        method: 'POST',
-        headers: {
-  "Content-Type": "application/json"
-},
-body: JSON.stringify(data)
-      })
+     const res = await fetch(API_URL, {
+  method: 'POST',
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(data)
+})
       const result = await res.json()
       setProducts(prev => [...prev,result ] )
     }catch(err){

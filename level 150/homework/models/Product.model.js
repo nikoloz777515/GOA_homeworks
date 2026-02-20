@@ -6,7 +6,7 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  description: {   // ← typo fixed
+  description: {  
     type: String,
     required: true
   },
