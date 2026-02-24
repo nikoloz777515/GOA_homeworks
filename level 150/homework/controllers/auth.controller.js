@@ -39,20 +39,28 @@ const signUp = async (req, res) => {
 }
 
 const login = async () =>{
-  const {email,password} = req.boy 
+  try {
+    const { email, password } = req.body;
 
-  const exists = await User.findOne({email})
-     if(!exists){
-        return res.satstus(400).json({
-          message: 'email or password is inccorect'
-        })
-   }
+    if (!email || !password) {
+      return res.status(400).json({ message: "Email and password are required" });
+    }
 
-   if(exists.password !== password){
-      return res.status(404).json({
-        message: 'password or email is inccorect'
-      })
-   }
-}
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(400).json({ message: "Email or password is incorrect" });
+    }
+
+    const isMatch = await user.comparePassword(password);
+    if (!isMatch) {
+      return res.status(400).json({ message: "Email or password is incorrect" });
+    }
+
+    res.status(200).json({ message: "Login successful", user });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Login failed" });
+  }
+};
 
 module.exports = {signUp,login}
