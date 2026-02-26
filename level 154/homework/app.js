@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 app.use(morgan('dev'))
 
-app.use('api/login',AuthRouter)
+app.use('/api',AuthRouter)
 
 app.get('/home',(req,res)=>{
     res.send('welocme to home page')

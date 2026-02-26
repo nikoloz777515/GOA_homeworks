@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const sendMail = require('../utils/email')
 
 const userSchema = new mongoose.Schema({
   name:{
@@ -11,29 +12,36 @@ const userSchema = new mongoose.Schema({
     required: [true, "email field is required"],
     unique: true
   },
-  password:{
-    type: String,
-    required: [true, "password fiel is required"],
-    minLength: [6, "password lenghth must be 6 characters long"],
-    maxLength: [18, "password length maximum is 18 letters"]
+ password:{
+  type: String,
+  required: [true, "password field is required"],
+  minlength: [6, "password must be at least 6 characters"]
+},
+  ifVerified:{
+    type: Boolean,
+    default: false
+  },
+  verificationCode:{
+    type: Number
+
   }
 })
 
-userSchema.pre('save', async function (next) {
-  if (!this.isModified('password')) return next();
+userSchema.pre('save', async function () {
+  if (!this.isModified('password')) return;
 
   this.password = await bcrypt.hash(this.password, 10);
-  next();
 });
 
-userSchema.methods.sendVerificationCode = async function () {
-  const code = Math.floor(1000 + Math.random() * 9000);
+userSchema.methods.sendVerificationCode = async function(){
+  const code =  Math.floor(1000 + Math.random() * 9000);
+  this.verificationCode = code
+  await this.save()
+  sendMail(this.email,'Email verification code',`Your verification Code is${code}`)
+  
+}
 
-  this.verificationCode = code;
-  await this.save();
-
-  console.log(`Verification code for ${this.email}: ${code}`);
-};
+ 
 
 userSchema.methods.comparePassword = async function (candidate) {
   return bcrypt.compare(candidate, this.password);

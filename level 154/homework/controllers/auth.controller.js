@@ -26,7 +26,7 @@ const signup = async (req,res) =>{
       await newUser.sendVerificationCode();
 
     res.status(201).json({
-      message: 'New user created sucesfully',
+      message: 'New user created sucesfully please verify your email',
       user: newUser
     })
   }catch(err){
