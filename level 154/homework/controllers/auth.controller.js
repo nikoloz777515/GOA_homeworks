@@ -47,7 +47,7 @@ const login = async (req,res) =>{
         if (!user) {
           return res.status(400).json({ message: "Email or password is incorrect" });
         }
-    const isMatch = await User.comparePassword(password);
+    const isMatch = await user.comparePassword(password);
     if(!isMatch){
       return res.status(400).json({
         message: 'email or password is incorrect'
@@ -64,4 +64,37 @@ const login = async (req,res) =>{
   }
 }
 
-module.exports = {signup,login}
+const verifyEmail = async (req,res)=>{
+    try{
+      const {code} = req.body;
+
+      if(!code){
+        return res.status(404).json({
+          message: 'verification code is required'
+        })
+      }
+
+      const user = await User.findOne({verificationCode: code})
+
+        if (!user) {
+      return res.status(400).json({
+        message: "Invalid verification code"
+      })
+    }
+      user.ifVerified = true
+      user.verificationCode = undefined
+
+       await user.save()
+
+      res.status(200).json({
+      message: "Email verified successfully"
+    })
+    }catch(err){
+      console.log(err)
+    }
+}
+
+module.exports = {signup,login,verifyEmail}
+
+
+
