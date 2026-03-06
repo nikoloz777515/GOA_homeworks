@@ -6,4 +6,4 @@ const {login,signup, verifyEmail} = require('../controllers/auth.controller')
 AuthRouter.post('/login',login);
 AuthRouter.post('/signup',signup)
 AuthRouter.post('/verify',verifyEmail)
-module.exports = AuthRouter;
+module.exports = AuthRouter;     
