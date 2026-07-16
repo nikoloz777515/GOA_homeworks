@@ -13,6 +13,6 @@ user =["Nika",20,true]
 
 // 3) შექმენით სატესტოდ მასივი სადაც გაუწერთ ტიპს და გატესტავთ რა როგორ იმუშავებს მაგალითად push []_ით შეცვლა და ასე შემდეგ
 
-let names: string[] = ["nika", "luka", "giorgi"];
-names.push("data");
- names.push[2]= "Dachi";
+// let names: string[] = ["nika", "luka", "giorgi"];
+// names.push("data");
+//  names.push[2]= "Dachi";
